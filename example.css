@@ -1,0 +1,17 @@
+h1 {
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #e60000
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    color: #009efa
+}

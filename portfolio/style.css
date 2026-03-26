@@ -1,0 +1,38 @@
+body {
+    background-color: antiquewhite;
+
+}
+p{color :aqua;}
+h1, h2, h3, h3, h4, h5, h6 {
+    color:darkorange;
+
+
+}
+
+h1 {
+    font-size: 60px;}
+    h2 {
+        font-size: 48px;
+
+    }
+    h3 {
+        font-size: 36px;
+
+    }
+h4 {
+    font-size: 24px;
+
+}
+section {
+    border: 1px solid pink;
+    background-color: deeppink;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+body {
+    margin-left: 64px;
+    margin-right: 64px;
+
+}
+
