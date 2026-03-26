@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter a random plate number:</label>
+        <input type="text" pattern="^[a-zA-Z]{3}-\d{3}$" required>
+        <button type="submit">Submit</button><br><br>
+        <label>The date (DD.MM.YYYY):</label>
+        <input type="text" pattern="^\d{1,2}.\d{1,2}\.\d{4}$" required>
+        <button type="submit">Submit</button><br><br>
+        <label>Enter Your Identity code:</label>
+        <input type="text" pattern="^\d{6}[-A]?\d{3}[A-Za-z0-9]$" required>
+        <button type="submit">Submit</button><br><br>
+        <label>Enter Your Phone Number:</label>
+        <input type="text" pattern="^\d{7,10}$" required>
+        <button type="submit">Submit</button><br><br>
+        <label>Write a simple HTML code:</label>
+        <input type="text" pattern="^&lt;.+&gt;.*&lt;/.+&gt;$" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
