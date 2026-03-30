@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+
+
+}
+h1{
+    color: red;
+
+}
+p{
+    color: rgb(208, 255, 0);
+}
+
+pre {
+    color: rgb(255, 0, 0);
+}
+input:focus {
+    background-color: rgb(228, 0, 0);
+}
