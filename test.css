@@ -17,3 +17,10 @@ pre {
 input:focus {
     background-color: rgb(228, 0, 0);
 }
+main { 
+  display: flex;
+  flex-direction: row;       /* افقی */
+  align-items: center;       /* وسط عمودی */
+  justify-content: end;      /* بره سمت راست */
+  flex-wrap: nowrap;         /* نره خط بعد */
+}

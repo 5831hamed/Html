@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flex.css">
+    <style>
+        .container {
+            display: flex;              
+            flex-direction: row;        
+            gap: 10px;                  
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;     
+            border: 1px solid blue;     
+            padding: 5px;
+            width: 120px;               
+        }
+
+        .item {
+            display: flex;          
+            align-items: center;    
+            border: 1px solid red;  
+            padding: 5px;
+            margin: 3px 0;
+        }
+
+        .item img {
+            width: 50px;            
+            margin-right: 10px;     
+        }
+    </style>
+</head>
+<body>
+    <a href="../cv1.html">Portfolio</a>
+    <br><br>
+
+    <div class="container">
+        <!-- ستون ۱: Pokémon -->
+        <div class="column">
+            <div class="item">
+                <img src="pokemon.png" alt="Pikachu">
+                <span>Pikachu</span>
+            </div>
+            <div class="item">
+                <img src="pokemon1.png" alt="Squirtle">
+                <span>Squirtle</span>
+            </div>
+            <div class="item">
+                <img src="pokemon2.png" alt="Bulbasaur">
+                <span>Bulbasaur</span>
+            </div>
+        </div>
+
+        <!-- ستون ۲: Digimon -->
+        <div class="column">
+            <div class="item">
+                <img src="digimon.png" alt="Agumon">
+                <span>Agumon</span>
+            </div>
+            <div class="item">
+                <img src="digimon1.png" alt="Gabumon">
+                <span>Gabumon</span>
+            </div>
+            <div class="item">
+                <img src="digimon2.png" alt="Patamon">
+                <span>Patamon</span>
+            </div>
+        </div>
+
+        <!-- ستون ۳: Palworld -->
+        <div class="column">
+            <div class="item">
+                <img src="palworld.png" alt="Lamball">
+                <span>Lamball</span>
+            </div>
+            <div class="item">
+                <img src="palworld1.png" alt="Cattiva">
+                <span>Cattiva</span>
+            </div>
+            <div class="item">
+                <img src="palworld2.png" alt="Chikipi">
+                <span>Chikipi</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
