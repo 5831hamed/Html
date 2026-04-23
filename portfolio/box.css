@@ -9,68 +9,47 @@
     "nav nav"
     "aside main"
     "footer footer";
-    gap: 10px;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .box {
     border: 1px solid black;
-    padding: 10px;
+    padding: 1em;
     background-color: lightblue;
 }
+
 header {
     grid-area: header;
     background-color: rgb(229, 255, 0);
-    padding: 30px;
-    text-align: center;
-    padding-left: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    
+    padding: 1.5em;
 }
 
 main {
     font-weight: bold;
-    
-    padding-top: 5em;
-    padding-left: 3em;
     grid-area: main;
-    background-image: url("madrid.jpg");
-    background-size: cover;
-    padding-left: 1em;
-   
+    padding: 1.5em;
 }
+
 aside {
     color: white;
-    text-align: center;
     word-spacing: 2em;
-    padding-left: 3em;
-    padding-top: 2em;
     grid-area: aside;
     background-color: rgb(49, 5, 241);
-    padding: 10px;
+    padding: 1.5em;
 }
+
 footer {
-    text-align: center;
     word-spacing: 2em;
-    padding-top: 3em;
-    padding-bottom: 3em;
     grid-area: footer;
     background-color: rgb(0, 255, 157);
-    padding: 10px;
+    padding: 1.5em;
     text-align: center;
 }
+
 nav {
-    text-align: center;
     word-spacing: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 3em;
     grid-area: nav;
     background-color: rgb(197, 8, 255);
-    padding: 1em;
-    text-align: center;
-}
-#halo{
-    background-color: rgb(255, 0, 0);
+    padding: 1.5em;
 }
