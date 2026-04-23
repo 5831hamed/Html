@@ -22,3 +22,18 @@ p{
     font-size: 30px;
     
 }
+
+a{
+    font-family: "hamid";
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+header {
+    font-family: "hamed's special font";
+    font-size: 60px;
+    text-align: center;
+}
+aside a {
+    color: white;
+}
