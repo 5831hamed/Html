@@ -26,9 +26,15 @@ header {
 }
 
 main {
+    background-image: url("kratos.jpg");
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
     font-weight: bold;
     grid-area: main;
     padding: 1.5em;
+    padding-top: 200px;
 }
 
 aside {

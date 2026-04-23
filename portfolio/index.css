@@ -27,6 +27,13 @@ header {
     
 }
 main {
+    
+    background-image: url("kratos.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
     font-weight: bold;
     text-align: center;
     padding-top: 5em;

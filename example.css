@@ -3,3 +3,8 @@ h1 {
     color: darkorchid;
     font-style: nastalic;
 }
+
+@font-face {
+    font-family: 'My Special Font';
+    src: url('font.woff');
+}

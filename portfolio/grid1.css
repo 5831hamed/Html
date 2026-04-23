@@ -48,3 +48,10 @@ a {
     color: white;
     text-decoration: none;
 }
+main {
+    background-image: url("portfolio/kratos.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}

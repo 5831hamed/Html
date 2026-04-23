@@ -1,22 +1,21 @@
 .container{
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
-    "header header"
-    "nav nav"
-    "aside main"
-    "footer footer";
-    gap: 10px;
+    "header"
+    "nav"
+    "main"
+    "footer";
     max-width: 1000px;
     margin: 0 auto;
+    gap: 10px;
     min-height: 100vh;
-   
 }
 
 header{
     grid-area: header;
-    background-color: rgb(229, 255, 0);
+    background-color: rgb(134, 5, 33);
     padding: 1.5em;
     text-align: center;
 }
@@ -24,31 +23,19 @@ header{
 nav{
     grid-area: nav;
     background-color: rgb(197, 8, 255);
-    padding: 1.5em;
-    word-spacing: 2em;
+    padding: 1em;
     text-align: center;
+    word-spacing: 2em;
 }
 
 main{
-    
-    margin-right: 10em;
     background-image: url("kratos.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:  center;
+    background-position: center;
     color: white;
-
     grid-area: main;
-    padding: 1.5em;
-    font-weight: bold;
-}
-
-aside{
-    grid-area: aside;
-    background-color: rgb(49, 5, 241);
-    padding: 1.5em;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    padding: 2em;
 }
 
 footer{
@@ -57,12 +44,26 @@ footer{
     padding: 1.5em;
     text-align: center;
 }
+
 footer a{
-    margin-right: 1em;
-}
-h3 {
-    font-size: 1.5em;
-    color: rgb(117, 4, 247);
-    margin-right: 4em;
+    margin-right: 2em;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* form spacing */
+form{
+    margin-bottom: 2em;
+}
+
+input, select, textarea{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}

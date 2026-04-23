@@ -29,6 +29,13 @@ header {
 }
 
 main {
+    
+    background-image: url("portfolio/kratos.jpg");
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
     font-weight: bold;
     
     padding-top: 5em;

@@ -31,12 +31,18 @@ nav {
 }
 
 main {
+    background-image: url("portfolio/kratos.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
     grid-area: main;
     padding: 3em;
     font-weight: bold;
     text-align: center;
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
+padding-top: 200px;    
 }
 
 footer {
