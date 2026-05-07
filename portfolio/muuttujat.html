@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <link rel="stylesheet" href="calculator.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="muuttujat.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="muuttujat.js" defer></script>
+   
+
 </head>
 <body>
-    <div class="container">
+        <div class="container">
         <header>
-        <h1 style="font-size: 40px;">My JavaScript file</h1>
-    </header>
-    <main>
-        <section>
+            <h2>Hamed Gholami</h2>
+        </header>
+
+        <nav>
+            <a href="index.html" style="color: white;">Main_page</a>
+            <a href="../cv1.html" style="color: white;">Portfolio</a>
+            <a href="work_experience.html" style="color: white;">Work_Experience</a>
+        </nav>
+
+        <main>
             <button onclick="summa()">Summa</button>
             <button onclick="vahennys()">Vahennys</button>
             <button onclick="kerto()">Kerto</button>
             <button onclick="jako()">Jako</button>
+            <button onclick="hello()">Odin</button>
+        </main>
+        
+ 
+    <div class="calculator_section">
+    
+        <input class="display" aria-label="input" readonly>
+            <section id="keys">
+                <button onclick="appendTodisplay('+')" class="operator-btn">+</button>
+                <button onclick="appendTodisplay('7')">7</button>
+                <button onclick="appendTodisplay('8')">8</button>
+                <button onclick="appendTodisplay('9')">9</button>
+                <button onclick="appendTodisplay('-')" class="operator-btn">-</button>
+                <button onclick="appendTodisplay('4')">4</button>
+                <button onclick="appendTodisplay('5')">5</button>
+                <button onclick="appendTodisplay('6')">6</button>
+                <button onclick="appendTodisplay('*')" class="operator-btn">*</button>
+                <button onclick="appendTodisplay('1')">1</button>
+                <button onclick="appendTodisplay('2')">2</button>
+                <button onclick="appendTodisplay('3')">3</button>
+                <button onclick="appendTodisplay('/')" class="operator-btn">/</button>
+                <button onclick="appendTodisplay('0')">0</button>
+                <button onclick="appendTodisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()" class="operator-btn">C</button>    
+            </section>
         </section>
-        <p style="padding: 250px; font-size: 22px;">This is my JavaScript file. I am learning how to use JavaScript to create interactive web pages. I am excited to learn more about JavaScript and how it can be used to create amazing web applications.</p>
-    </main>
-    <aside>
-        <p>This is an aside section. It can be used to display additional information or links related to the main content.</p>
-    </aside>
-    <footer>
-        <p> My JavaScript File. All rights reserved.</p>    
-    </footer>
     </div>
+           <footer>
+            <a href="https://turku.inschool.fi/!02381831/">Wilma</a>
+            <a href="https://tai.fi">TAI</a>
+            <a href="https://taito.edu.turku.fi/">Moodle</a>
+        </footer>
+     <script src="muuttujat.js" defer></script>
+    <script src="calculator.js" defer></script>
 </body>
 </html>

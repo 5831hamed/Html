@@ -15,3 +15,4 @@ function kerto () {
 function jako () {
     alert(d/a);
 }
+

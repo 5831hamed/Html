@@ -1,15 +1,20 @@
 .container{
-    display:grid;
-    grid-template-columns: 1fr 4fr ;
-    grid-template-rows: auto auto 1fr auto;
-    min-height: 100vh;
-    grid-template-areas:
-    "header header"
-    "nav nav"
-    "aside main"
-    "footer footer";
-    max-width: 1000px;
-    margin: 0 auto;
+   display:flex;
+    flex-direction: column;
+    align-items: center;
+   height: max-content;
+width: 100%;
+}
+
+.calculator_section{
+display: flex;
+flex-direction: column;
+border: 1px solid black;
+padding: 20px;
+margin-top: 10px;
+border-radius: 10px;
+border-top: orange solid 3px;
+background-color: #fff;
 }
 .box {
     border: 1px solid black;
@@ -17,53 +22,43 @@
     background-color: lightblue;
 }
 header {
-    grid-area: header;
+    width: 100%;
     background-color: rgb(229, 255, 0);
-    padding: 30px;
-    text-align: center;
-    padding-left: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    height: 60px;
+  margin-bottom: 30px;
+  position: fixed;
+    top: 0;
+        z-index: 1000;
+}
+
+header h2{
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
 }
 main {
-    
-    background-image: url("kratos.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
     color: white;
-
     font-weight: bold;
     text-align: center;
-    padding-top: 5em;
-    padding-left: 3em;
-    grid-area: main;
-    
-    padding-left: 1em;
    
 }
-aside {
-    display: flex;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    text-align: center;
-   
-    padding-left: 3em;
-    padding-top: 2em;
-    grid-area: aside;
-    background-color: rgb(250, 7, 47);
-    padding: 10px;
-}
+
+
 footer {
     text-align: center;
-    
-    padding-top: 3em;
-    padding-bottom: 3em;
-    grid-area: footer;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 40px;
     background-color: rgb(255, 166, 0);
-    padding: 10px;
-    
+    height: 60px;
+    position: fixed;
+    bottom: 0;  
+    z-index: 1000;
 }
 nav {
     grid-area: nav;
@@ -72,12 +67,27 @@ nav {
     justify-content: center;
     gap: 2em;
     padding: 1em;
+    position: fixed;
+    top: 60px;
+    z-index: 1000;
+    width: 100%;
 }
 
 section button {
     padding: 2px;
     display: flex;
     justify-content: center;
-    gap: 1em;
-    margin-top: 2em;
+    margin-top: 10px;
 }
+
+    main{
+    background-color: rgb(110, 100, 100);
+    display: flex;
+}
+ main button{
+    font-size: small;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
