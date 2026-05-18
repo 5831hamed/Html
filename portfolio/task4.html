@@ -9,14 +9,15 @@
     <meta name="author" content="Yousefalmasri">
     <meta name="description" content="Hamed Gholami's personal website and portfolio">
     <title>discussion Page</title>
-    <script src="task4.js" defer></script>
 
+    <script src="task4.js" defer></script>
 </head>
 
 <body>
+
 <div class="container">
 
-    <header>
+    <header style="height: 100px;">
         <h1>discussion Page</h1>
     </header>
 
@@ -26,78 +27,108 @@
         <a href="../semantic.html" style="color: white;">Work Experience</a>
         <a href="media.html" style="color: white;">Media</a>
     </nav>
+    
+    <aside>
 
+        <h3>You can slide between pages Broo</h3>
+
+        <p>
+            <a href="flex.html" style="color: white;">Flex</a><br>
+            <a href="muuttujat.html" style="color: white;">Muuttujat</a><br>
+            <a href="regex.html" style="color: white;">Regex</a>
+        </p>
+
+        <p>
+            All messages are reviewed before publishing.
+        </p>
+
+    </aside>
     <main>
-
+        
         <form>
+            
             <label for="birthdate">Birthdate</label>
-            <input type="date" id="birthdate" name="birthdate">
+            <input type="date" id="birthdate" name="birthdate" required>
             <br><br>
-
+            
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
             <br><br>
-
+            
             <label for="Message-type">Viestin-tyyppi</label>
-            <select id="Message-type">
+            
+            <select id="Message-type" required>
                 <option>Kysymys</option>
                 <option>ehdotus</option>
             </select>
-            <br><br>
 
-            <label>Question box</label>
-            <textarea rows="5" cols="40"></textarea>
             <br><br>
-
-            <input type="checkbox">
-            <label>CLICK IF U AGREE TO SEND THIS</label>
+            
+            <label for="usage">Usage</label>
+            <input type="text" id="usage">
+            
             <br><br>
+            
+            <label for="body">Question box</label>
 
-            <input type="submit" value="send">
+            <textarea id="body" rows="5" cols="40" required></textarea>
+            
+            <br><br>
+            
+            <input type="checkbox" id="consent" required>
+            
+            <label for="consent">CLICK IF U AGREE TO SEND THIS</label>
+            
+            <br><br>
+            
+            <input type="submit" name="submit" value="send" onclick="send(event)">
+            
         </form>
-
+        
         <hr>
-
+        
         <section>
+            
             <h2>Previous Comments</h2>
 
             <article>
                 <strong>kuba@gamer.fi - 18.03.2026 klo 18:36</strong><br>
                 really nice awebsite i love it and enjoy it well done
             </article>
-
+            
             <hr>
 
             <article>
                 <strong>yousef@almesri - 16.02.2025 klo 13:45</strong><br>
                 im from kurdistan this website is just amazingn i love working with it
             </article>
-
+            
             <hr>
-
+            
             <article>
                 <strong>Yaroslav@koval - 07.08.2022 klo 6:04</strong><br>
                 i kind hate this website look like scamm
             </article>
-
+            
             <hr>
-
+            
             <article>
                 <strong>tomas@shelby.fi - 05.03.2024 klo 12:00</strong><br>
                 mä eeen tyykkän se weppi sivuu
             </article>
 
             <hr>
-
+            
             <article>
                 <strong>hamed.gholami.afg - 18.03.2026 klo 15:14</strong><br>
                 i personally looove it looks nice everything is good
             </article>
-
+            
         </section>
+        
 
     </main>
-
+    
     <footer>
         <a href="https://turku.inschool.fi/!02381831/">Wilma</a>
         <a href="https://tai.fi">TAI</a>
@@ -105,5 +136,6 @@
     </footer>
 
 </div>
+
 </body>
 </html>
