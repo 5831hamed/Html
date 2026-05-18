@@ -1,10 +1,17 @@
-.container{
-   display:flex;
-    flex-direction: column;
-    align-items: center;
-   height: max-content;
-width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container{
+    display:flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+}
+
 
 .calculator_section{
 display: flex;
@@ -16,11 +23,6 @@ border-radius: 10px;
 border-top: orange solid 3px;
 background-color: #fff;
 }
-.box {
-    border: 1px solid black;
-    padding: 10px;
-    background-color: lightblue;
-}
 header {
     width: 100%;
     background-color: rgb(229, 255, 0);
@@ -28,18 +30,27 @@ header {
  align-items: center;
  justify-content: center;
     height: 60px;
-  margin-bottom: 30px;
   position: fixed;
     top: 0;
-        z-index: 1000;
+ z-index: 1000;
 }
 
 header h2{
     margin: 0;
-    font-size: 1rem;
+    font-size: 2rem;
     color: rgb(0, 0, 0);
 }
+
 main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.calculatorC {
+    background-color: rgb(110, 100, 100);
+    display: flex;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -80,14 +91,34 @@ section button {
     margin-top: 10px;
 }
 
-    main{
-    background-color: rgb(110, 100, 100);
-    display: flex;
-}
- main button{
+ .calculatorC button{
     font-size: small;
     padding: 10px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+ }
+
+ aside{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 130px;
+        left: 0;
+        bottom: 60px;
+    justify-content: start;
+    height: 100%;
+    background-color: rgb(49, 5, 241);
+    padding: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 230px;
+ }
+
+ aside h3{
+    white-space: nowrap;
+    margin-bottom: 30px;
+    font-size: 2em;
  }

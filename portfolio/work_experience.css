@@ -28,6 +28,13 @@ nav{
     word-spacing: 2em;
     text-align: center;
 }
+aside{
+    grid-area: aside;
+    background-color: rgb(49, 5, 241);
+    padding: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
 
 main{
     
@@ -43,13 +50,7 @@ main{
     font-weight: bold;
 }
 
-aside{
-    grid-area: aside;
-    background-color: rgb(49, 5, 241);
-    padding: 1.5em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
+
 
 footer{
     grid-area: footer;
