@@ -1,35 +1,162 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="portfolio/font.css">
-    <link rel="stylesheet" href="portfolio/style.css">
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="hamed gholami, hamed, gholami, hamedgholami, hamed gholami portfolio">
+    <meta name="author" content="Hamed Gholami">
+    <meta name="description" content="Hamed Gholami — Developer, Tiev25P, God of Bugs">
+    <title>Hamed Gholami — Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-
 </head>
 <body>
-    <div class="container">
-        <header>Hamed Gholami Tiev25P</header>
-        <nav>
-            <a href="index.html">Main page</a>
-            <a href="cv1.html">Portfolio</a>
-            <a href="portfolio/work_experience.html">Work Experience</a>
-        </nav>
-        <main>
-           <h1>This is the main area</h1>
-            <p>God of Bugs</p>
-            <button onclick="hello()">Odin</button>
-        </main>
-     
-        <footer>
-            <a href="https://turku.inschool.fi/!02381831/">Wilma</a>
-            <a href="https://tai.fi">TAI</a>
-            <a href="https://taito.edu.turku.fi/">Moodle</a>
-        </footer>
+
+<div class="site">
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <h2>I am the God of Bugs</h2>
+            <p>Hamed Gholami &mdash; Tiev25P &mdash; the one who bends code to his will and calls every error a lesson.</p>
+            <button class="modal-close" id="modal-close">Close the gates</button>
+        </div>
     </div>
+
+    <header class="header">
+        <div class="header-bg-ring"></div>
+        <div class="header-bg-ring2"></div>
+
+        <div class="topbar">
+            <div class="logo">
+                <div class="logo-mark">HG</div>
+                <div class="logo-text">Hamed Gholami &nbsp;&middot;&nbsp; Tiev25P</div>
+            </div>
+            <div class="topbar-links">
+                <a href="index.html">Home</a>
+                <a href="cv1.html">Portfolio</a>
+                <a href="portfolio/work_experience.html">Work exp.</a>
+            </div>
+            <div class="topbar-pill">Available</div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-left">
+                <div class="hero-eyebrow">Personal portfolio</div>
+                <div class="hero-name">Hamed<br><em>Gholami</em></div>
+                <div class="hero-title">Developer &nbsp;&middot;&nbsp; Tiev25P &nbsp;&middot;&nbsp; God of Bugs</div>
+                <button class="hero-btn" id="odin-hero">
+                    &#9889; Invoke Odin
+                </button>
+            </div>
+            <div class="hero-right">
+                <div class="stat-card">
+                    <div class="stat-num">&infin;<span>+</span></div>
+                    <div class="stat-label">Bugs defeated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">100<span>%</span></div>
+                    <div class="stat-label">Dedication</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">1<span>st</span></div>
+                    <div class="stat-label">Class developer</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html" class="active">&#8962; Main page</a>
+        <a href="cv1.html">&#9741; Portfolio</a>
+        <a href="portfolio/work_experience.html">&#9787; Work Experience</a>
+    </nav>
+
+    <div class="content">
+        <div class="content-left">
+            <div class="section-label">About this area</div>
+            <div class="big-quote">&ldquo;This is the main area.<br><strong>God of Bugs</strong> lives here.&rdquo;</div>
+            <p class="sub-text">Welcome to Hamed&rsquo;s corner of the internet &mdash; where code is crafted, bugs are conquered, and every project is a new battle won. Tiev25P, class of legends.</p>
+
+            <div class="skill-row">
+                <div class="skill-tag hl"><a style="color:white;" href="portfolio/task4.html">Discussion page</a></div>
+                <div class="skill-tag hl"><a style="color: aliceblue;" href="portfolio/tasklist.html">Task List</a></div>
+                <div class="skill-tag hl">JavaScript</div>
+                <div class="skill-tag">Debugging</div>
+                <div class="skill-tag">Grid &amp; Flex</div>
+                <div class="skill-tag">Regex</div>
+                <div class="skill-tag">Problem solving</div>
+            </div>
+
+            <div class="odin-zone">
+                <div class="odin-icon">&#9813;</div>
+                <div class="odin-text">
+                    <div class="ot1">The Odin Protocol</div>
+                    <div class="ot2">Click to awaken the god of bugs</div>
+                </div>
+                <button class="odin-btn" id="odin-zone-btn">Invoke</button>
+            </div>
+        </div>
+
+        <aside class="content-right">
+            <div class="section-label">Quick links</div>
+
+            <div class="side-card">
+                <div class="sc-top">
+                    <div class="sc-icon sc-green">W</div>
+                    <div class="sc-title">Wilma</div>
+                </div>
+                <p class="sc-sub">School platform &mdash; check grades, messages, and schedules.</p>
+                <a class="sc-link" href="https://turku.inschool.fi/!02381831/">&rarr; Open Wilma</a>
+            </div>
+
+            <div class="side-card">
+                <div class="sc-top">
+                    <div class="sc-icon sc-blue">T</div>
+                    <div class="sc-title">TAI</div>
+                </div>
+                <p class="sc-sub">Turku Vocational Institute &mdash; the home base of Tiev25P.</p>
+                <a class="sc-link" href="https://tai.fi">&rarr; Open TAI</a>
+            </div>
+
+            <div class="side-card">
+                <div class="sc-top">
+                    <div class="sc-icon sc-amber">M</div>
+                    <div class="sc-title">Moodle</div>
+                </div>
+                <p class="sc-sub">Learning management &mdash; courses, assignments, and resources.</p>
+                <a class="sc-link" href="https://taito.edu.turku.fi/">&rarr; Open Moodle</a>
+            </div>
+
+            <div class="side-ticker">
+                <div class="ticker-label">Status board</div>
+                <div class="ticker-item">
+                    <div class="ticker-dot dot-green"></div>
+                    <div class="ticker-name">Bug hunting</div>
+                    <div class="ticker-val">Active</div>
+                </div>
+                <div class="ticker-item">
+                    <div class="ticker-dot dot-yellow"></div>
+                    <div class="ticker-name">Portfolio</div>
+                    <div class="ticker-val">Building</div>
+                </div>
+                <div class="ticker-item">
+                    <div class="ticker-dot dot-pink"></div>
+                    <div class="ticker-name">Tiev25P</div>
+                    <div class="ticker-val">Legend</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+        <a href="https://tai.fi">&#9632; TAI</a>
+        <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+        <div class="footer-right">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+    </footer>
+
+</div>
 </body>
 </html>

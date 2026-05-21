@@ -1,89 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Hamed Gholami</title>
-    <link rel="stylesheet" href="portfolio/style.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="portfolio.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hamed Gholami — Student, Developer, Turku Finland">
+  <meta name="author" content="Yousefalmasri">
+  <title>Hamed Gholami — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600&family=Fragment+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Fragment+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="portfolio.js" defer></script>
 </head>
 <body>
-<div class="container">
 
-    <header>Hamed Gholami &nbsp;|&nbsp; Tiev25P</header>
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-layer"></div>
+  <div class="cursor-orb" id="cursorOrb"></div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cv1.html">Portfolio</a>
-        <a href="portfolio/work_experience.html">Work Experience</a>
-    </nav>
+  <div class="container">
 
+    <!-- HEADER -->
+    <header>
+      <div class="hdr-left">
+        <div class="hdr-avatar">
+          <span>HG</span>
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="hdr-info">
+          <h1 class="hdr-name">Hamed Gholami</h1>
+          <span class="hdr-class">Tiev25P &nbsp;·&nbsp; TAI Turku</span>
+        </div>
+      </div>
+      <div class="hdr-right">
+        <a href="index.html" class="hdr-link">Home</a>
+        <a href="cv1.html" class="hdr-link active">Portfolio</a>
+        <a href="portfolio/work_experience.html" class="hdr-link">Work Exp.</a>
+        <div class="hdr-status">
+          <span class="status-dot"></span>
+          <span>Open to work</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ASIDE -->
     <aside>
-        <p class="aside-label">My Work</p>
-        <a href="portfolio/box.html">Box</a>
-        <a href="portfolio/flex.html">Flex</a>
-        <a href="portfolio/grid1.html">Grid</a>
-        <a href="portfolio/media.html">Media</a>
-        <a href="semantic.html">Semantic</a>
-        <a href="portfolio/font.html">Font</a>
-        <a href="portfolio/muuttujat.html">Calculator</a>
+      <div class="aside-label">Projects</div>
+      <nav class="aside-nav">
+        <a href="portfolio/box.html"         class="aside-item"><span class="ai-num">01</span><span class="ai-name">Box</span><span class="ai-arr">↗</span></a>
+        <a href="portfolio/flex.html"        class="aside-item"><span class="ai-num">02</span><span class="ai-name">Flex</span><span class="ai-arr">↗</span></a>
+        <a href="portfolio/grid1.html"       class="aside-item"><span class="ai-num">03</span><span class="ai-name">Grid</span><span class="ai-arr">↗</span></a>
+        <a href="portfolio/media.html"       class="aside-item"><span class="ai-num">04</span><span class="ai-name">Media</span><span class="ai-arr">↗</span></a>
+        <a href="semantic.html"              class="aside-item"><span class="ai-num">05</span><span class="ai-name">Semantic</span><span class="ai-arr">↗</span></a>
+        <a href="portfolio/font.html"        class="aside-item"><span class="ai-num">06</span><span class="ai-name">Font</span><span class="ai-arr">↗</span></a>
+        <a href="portfolio/muuttujat.html"   class="aside-item"><span class="ai-num">07</span><span class="ai-name">Calculator</span><span class="ai-arr">↗</span></a>
+      </nav>
+      <div class="aside-foot">
+        <div class="tech-stack-label">Stack</div>
+        <div class="tech-pills">
+          <span>HTML</span><span>CSS</span><span>JS</span>
+        </div>
+      </div>
     </aside>
 
+    <!-- MAIN -->
     <main>
-        <h1>Hello, I'm <span>Hamed.</span></h1>
-        <p class="tagline">Student · Developer · Turku, Finland</p>
 
-        <section>
-            <h2>Personal Information</h2>
-            <div class="info-grid">
-                <p><strong>Name</strong><br>Hamed Gholami</p>
-                <p><strong>Date of birth</strong><br>07.10.2005</p>
-                <p><strong>Phone</strong><br>040 819 5941</p>
-                <p><strong>Email</strong><br>Moria7gh@gmail.com</p>
-                <p><strong>Address</strong><br>Turku, Finland</p>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>Portfolio 2025</span>
+        </div>
+        <h2 class="hero-title">
+          Hello,<br>
+          I'm <em class="hero-em">Hamed.</em>
+        </h2>
+        <p class="hero-sub">Student · Developer · Turku, Finland</p>
+        <div class="hero-chips">
+          <span class="chip">🔥 Cook</span>
+          <span class="chip">💪 Gym</span>
+          <span class="chip">🥋 Taekwondo</span>
+          <span class="chip">✏️ Drawing</span>
+        </div>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="cards">
+
+        <!-- Personal Info -->
+        <div class="card card-wide" data-reveal>
+          <div class="card-label">01 — Personal Info</div>
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-k">Name</span>
+              <span class="info-v">Hamed Gholami</span>
             </div>
-        </section>
+            <div class="info-item">
+              <span class="info-k">Born</span>
+              <span class="info-v">07.10.2005</span>
+            </div>
+            <div class="info-item">
+              <span class="info-k">Phone</span>
+              <span class="info-v">040 819 5941</span>
+            </div>
+            <div class="info-item">
+              <span class="info-k">Email</span>
+              <span class="info-v">Moria7gh@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-k">Location</span>
+              <span class="info-v">Turku, Finland</span>
+            </div>
+          </div>
+        </div>
 
-        <section>
-            <h2>Profile</h2>
-            <p>Motivated programming student with a background in professional kitchens. I thrive under pressure, enjoy teamwork, and am building skills in web development and software engineering.</p>
-        </section>
+        <!-- Profile -->
+        <div class="card" data-reveal>
+          <div class="card-label">02 — Profile</div>
+          <p class="card-body">Motivated programming student with a background in professional kitchens. I thrive under pressure, enjoy teamwork, and am building skills in web development and software engineering.</p>
+          <div class="card-deco"></div>
+        </div>
 
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>TAI School — Programming (current)</li>
-                <li>IB High School — Turku</li>
-                <li>Basic Education — Alma</li>
-            </ul>
-        </section>
+        <!-- Education -->
+        <div class="card" data-reveal>
+          <div class="card-label">03 — Education</div>
+          <ul class="card-list">
+            <li><span class="li-dot" style="--c:#a78bfa"></span><div><strong>TAI School</strong><br><small>Programming — Current</small></div></li>
+            <li><span class="li-dot" style="--c:#38bdf8"></span><div><strong>IB High School</strong><br><small>Turku</small></div></li>
+            <li><span class="li-dot" style="--c:#34d399"></span><div><strong>Basic Education</strong><br><small>Alma</small></div></li>
+          </ul>
+        </div>
 
-        <section>
-            <h2>Language Skills</h2>
-            <ul>
-                <li>Persian — Native</li>
-                <li>English — Excellent</li>
-                <li>Finnish — Good</li>
-            </ul>
-        </section>
+        <!-- Languages -->
+        <div class="card" data-reveal>
+          <div class="card-label">04 — Languages</div>
+          <div class="lang-bars">
+            <div class="lang-row">
+              <span class="lang-name">Persian</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:100%;--c:#a78bfa"></div></div>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:90%;--c:#38bdf8"></div></div>
+              <span class="lang-level">Excellent</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Finnish</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:60%;--c:#34d399"></div></div>
+              <span class="lang-level">Good</span>
+            </div>
+          </div>
+        </div>
 
-        <section>
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Gym</li>
-                <li>Taekwondo</li>
-                <li>Drawing</li>
-            </ul>
-        </section>
+        <!-- Hobbies -->
+        <div class="card card-wide" data-reveal>
+          <div class="card-label">05 — Hobbies</div>
+          <div class="hobby-grid">
+            <div class="hobby-item">
+              <div class="hobby-icon">💪</div>
+              <span>Gym</span>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon">🥋</div>
+              <span>Taekwondo</span>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon">✏️</div>
+              <span>Drawing</span>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon">🔥</div>
+              <span>Cooking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <a href="https://turku.inschool.fi/!02381831/">Wilma</a>
-        <a href="https://tai.fi">TAI</a>
-        <a href="https://taito.edu.turku.fi/">Moodle</a>
+      <span class="footer-sig">Hamed Gholami © 2026</span>
+      <div class="footer-links">
+        <a href="https://turku.inschool.fi/!02381831/" target="_blank">Wilma</a>
+        <a href="https://tai.fi" target="_blank">TAI</a>
+        <a href="https://taito.edu.turku.fi/" target="_blank">Moodle</a>
+      </div>
     </footer>
 
-</div>
+  </div>
 </body>
 </html>

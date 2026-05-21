@@ -1,138 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="task4.css">
-    <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="keywords" content="hamed gholami, hamed, gholami, hamedgholami, hamed gholami cv, hamed gholami portfolio, hamed gholami discussion, hamed gholami media">
     <meta name="author" content="Yousefalmasri">
     <meta name="description" content="Hamed Gholami's personal website and portfolio">
-    <title>discussion Page</title>
-
+    <title>Discussion Page</title>
+    <link rel="stylesheet" href="task4.css">
     <script src="task4.js" defer></script>
 </head>
-
 <body>
 
-<div class="container">
+<div class="site">
 
-    <header style="height: 100px;">
-        <h1>discussion Page</h1>
+    <header>
+        <div class="hdr-inner">
+            <div class="hdr-left">
+                <h1>Hamed<br>Gholami</h1>
+                <span>Discussion</span>
+            </div>
+            <div class="hdr-right">
+                <a href="index.html">Home</a>
+                <a href="../cv1.html">Portfolio</a>
+                <a href="../semantic.html">Work Experience</a>
+                <a href="media.html">Media</a>
+                <span class="hdr-pill">Live</span>
+            </div>
+        </div>
     </header>
 
     <nav>
-        <a href="index.html" style="color: white;">Home Page</a>
-        <a href="../cv1.html" style="color: white;">Portfolio</a>
-        <a href="../semantic.html" style="color: white;">Work Experience</a>
-        <a href="media.html" style="color: white;">Media</a>
+        <a href="task4.html" class="nav-item active"><i>&#9711;</i> Discussion</a>
+        <a href="flex.html" class="nav-item"><i>&#9638;</i> Flex</a>
+        <a href="muuttujat.html" class="nav-item"><i>&#10038;</i> Muuttujat</a>
+        <a href="regex.html" class="nav-item"><i>&#8727;</i> Regex</a>
     </nav>
-    
-    <aside>
 
-        <h3>You can slide between pages Broo</h3>
+    <div class="body">
 
-        <p>
-            <a href="flex.html" style="color: white;">Flex</a><br>
-            <a href="muuttujat.html" style="color: white;">Muuttujat</a><br>
-            <a href="regex.html" style="color: white;">Regex</a>
-        </p>
+        <aside>
+            <div class="aside-head">Pages</div>
+            <div class="aside-nav">
+                <a href="index.html">&#8962; Home page</a>
+                <a href="../cv1.html">&#9741; Portfolio</a>
+                <a href="../semantic.html">&#9787; Work exp.</a>
+                <a href="media.html">&#9671; Media</a>
+            </div>
+            <div class="aside-decor">
+                <div class="stripe s1"></div>
+                <div class="stripe s2"></div>
+                <div class="stripe s3"></div>
+                <div class="stripe s4"></div>
+                <div class="stripe s5"></div>
+            </div>
+        </aside>
 
-        <p>
-            All messages are reviewed before publishing.
-        </p>
+        <main>
+            <div class="form-header">
+                <div class="form-badge">New message</div>
+                <div class="form-title">What's on your mind?</div>
+            </div>
 
-    </aside>
-    <main>
-        
-        <form>
-            
-            <label for="birthdate">Birthdate</label>
-            <input type="date" id="birthdate" name="birthdate" required>
-            <br><br>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            
-            <label for="Message-type">Viestin-tyyppi</label>
-            
-            <select id="Message-type" required>
-                <option>Kysymys</option>
-                <option>ehdotus</option>
-            </select>
+            <form class="form-wrap" onsubmit="send(event)">
+                <div class="form-row">
+                    <div class="field-block">
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="field-block">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field-block">
+                        <label for="Message-type">Message type</label>
+                        <select id="Message-type" name="Message-type" required>
+                            <option>Kysymys</option>
+                            <option>Ehdotus</option>
+                        </select>
+                    </div>
+                    <div class="field-block">
+                        <label for="usage">Usage</label>
+                        <input type="text" id="usage" name="usage" placeholder="What's this about?">
+                    </div>
+                </div>
+                <div class="form-row single">
+                    <div class="field-block">
+                        <label for="body">Your message</label>
+                        <textarea id="body" name="body" rows="5" required placeholder="Write freely — questions, ideas, anything…"></textarea>
+                    </div>
+                </div>
+                <div class="form-action">
+                    <label class="consent-label">
+                        <input type="checkbox" id="consent" required>
+                        I agree to send this message
+                    </label>
+                    <button type="submit" class="send-btn">&#10148; Send it</button>
+                </div>
+            </form>
 
-            <br><br>
-            
-            <label for="usage">Usage</label>
-            <input type="text" id="usage">
-            
-            <br><br>
-            
-            <label for="body">Question box</label>
+            <div class="comments-header">
+                <div class="comments-title">What people are saying</div>
+                <div class="comments-count">5 comments</div>
+            </div>
 
-            <textarea id="body" rows="5" cols="40" required></textarea>
-            
-            <br><br>
-            
-            <input type="checkbox" id="consent" required>
-            
-            <label for="consent">CLICK IF U AGREE TO SEND THIS</label>
-            
-            <br><br>
-            
-            <input type="submit" name="submit" value="send" onclick="send(event)">
-            
-        </form>
-        
-        <hr>
-        
-        <section>
-            
-            <h2>Previous Comments</h2>
+            <div class="comment-grid">
 
-            <article>
-                <strong>kuba@gamer.fi - 18.03.2026 klo 18:36</strong><br>
-                really nice awebsite i love it and enjoy it well done
-            </article>
-            
-            <hr>
+                <div class="ccard green">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-green">KB</div>
+                        <div>
+                            <div class="cc-name">kuba@gamer.fi</div>
+                            <div class="cc-meta">18 March 2026 &middot; 18:36</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">Really nice website, I love it and enjoy it. Well done!</div>
+                </div>
 
-            <article>
-                <strong>yousef@almesri - 16.02.2025 klo 13:45</strong><br>
-                im from kurdistan this website is just amazingn i love working with it
-            </article>
-            
-            <hr>
-            
-            <article>
-                <strong>Yaroslav@koval - 07.08.2022 klo 6:04</strong><br>
-                i kind hate this website look like scamm
-            </article>
-            
-            <hr>
-            
-            <article>
-                <strong>tomas@shelby.fi - 05.03.2024 klo 12:00</strong><br>
-                mä eeen tyykkän se weppi sivuu
-            </article>
+                <div class="ccard blue">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-blue">YA</div>
+                        <div>
+                            <div class="cc-name">yousef@almesri</div>
+                            <div class="cc-meta">16 Feb 2025 &middot; 13:45</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">I'm from Kurdistan. This website is just amazing, I love working with it.</div>
+                </div>
 
-            <hr>
-            
-            <article>
-                <strong>hamed.gholami.afg - 18.03.2026 klo 15:14</strong><br>
-                i personally looove it looks nice everything is good
-            </article>
-            
-        </section>
-        
+                <div class="ccard neg">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-red">YK</div>
+                        <div>
+                            <div class="cc-name">Yaroslav@koval</div>
+                            <div class="cc-meta">07 Aug 2022 &middot; 6:04</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">I kind of hate this website, looks like a scam.</div>
+                </div>
 
-    </main>
-    
+                <div class="ccard amber">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-amber">TS</div>
+                        <div>
+                            <div class="cc-name">tomas@shelby.fi</div>
+                            <div class="cc-meta">05 March 2024 &middot; 12:00</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">Mä eeen tyykkän se weppi sivuu.</div>
+                </div>
+
+                <div class="ccard purple wide">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-purple">HG</div>
+                        <div>
+                            <div class="cc-name">hamed.gholami.afg</div>
+                            <div class="cc-meta">18 March 2026 &middot; 15:14</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">I personally love it, looks nice, everything is good!</div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
     <footer>
-        <a href="https://turku.inschool.fi/!02381831/">Wilma</a>
-        <a href="https://tai.fi">TAI</a>
-        <a href="https://taito.edu.turku.fi/">Moodle</a>
+        <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+        <a href="https://tai.fi">&#9632; TAI</a>
+        <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+        <div class="footer-copy">Hamed Gholami &copy; 2026</div>
     </footer>
 
 </div>
