@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henkilötiedot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="henkilotiedot.css">
+</head>
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Henkilötiedot</span>
+      </div>
+      <div class="hdr-right">
+        <a href="index.html">Home</a>
+        <a href="cv1.html">Portfolio</a>
+        <a href="portfolio/work_experience.html">Work exp.</a>
+        <span class="hdr-pill">JS Objects</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-item">&#8962; Main page</a>
+    <a href="cv1.html" class="nav-item">&#9741; Portfolio</a>
+    <a href="portfolio/work_experience.html" class="nav-item">&#9787; Work Experience</a>
+    <a href="henkilotiedot.html" class="nav-item active">&#9711; Henkilötiedot</a>
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside-head">Websites</div>
+      <div class="aside-nav">
+        <a href="task4.html"><span class="ai-num">01</span>Discussion<span class="ai-arr">↗</span></a>
+        <a href="flex.html"><span class="ai-num">02</span>Flex<span class="ai-arr">↗</span></a>
+        <a href="media.html"><span class="ai-num">02</span> Media <span class="ai-arr">↗</span></a>
+        <a href="../semantic.html"><span class="ai-num">02</span> Semantic <span class="ai-arr">↗</span></a>
+        <a href="Calculator.html"><span class="ai-num">02</span> Calculator <span class="ai-arr">↗</span></a>
+        <a href="regex.html"><span class="ai-num">02</span> Regex <span class="ai-arr">↗</span></a>
+
+    </div>
+
+      <div class="aside-foot">
+        <div class="stack-label">Stack</div>
+        <div class="tech-pills">
+          <span>HTML</span><span>CSS</span><span>JS</span>
+        </div>
+      </div>
+      <div class="aside-decor">
+        <div class="stripe s1"></div>
+        <div class="stripe s2"></div>
+        <div class="stripe s3"></div>
+        <div class="stripe s4"></div>
+        <div class="stripe s5"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- Hero -->
+      <div class="form-header">
+        <div class="form-badge">Task 2025</div>
+        <div class="form-title"><em>Henkilötiedot</em></div>
+      </div>
+      <p class="sub-text">Lista henkilötiedoista — rakennettu JavaScriptillä ohjelmallisesti</p>
+
+      <!-- Table card -->
+      <div class="table-card" id="taulu">
+        <div class="table-card-head">
+          <div class="cc-top">
+            <div class="cc-avatar av-purple">JS</div>
+            <div>
+              <div class="cc-name">Henkilöt</div>
+              <div class="cc-meta">Luotu JavaScript-objekteista</div>
+            </div>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Nimi</th>
+              <th>Ikä</th>
+              <th>Työ</th>
+              <th>Ajokortti</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JavaScript fills this in automatically -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Info card -->
+      <div class="info-card" id="info">
+        <div class="cc-top">
+          <div class="cc-avatar av-blue">i</div>
+          <div>
+            <div class="cc-name">Miten tämä toimii?</div>
+            <div class="cc-meta">JavaScript objects + arrays</div>
+          </div>
+        </div>
+        <div class="cc-body">
+          Taulukko on rakennettu automaattisesti JavaScriptillä. Henkilöt on tallennettu
+          <code>henkilot</code>-muuttujaan taulukkona, jossa jokainen henkilö on objekti.
+          Funktio <code>luoRivit()</code> käy läpi kaikki henkilöt ja luo jokaiselle oman
+          taulukkorivin ohjelmallisesti.
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+    <a href="https://tai.fi">&#9632; TAI</a>
+    <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+    <div class="footer-copy">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+  </footer>
+
+</div>
+
+<script src="henkilotiedot.js"></script>
+</body>
+</html>
