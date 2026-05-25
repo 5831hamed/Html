@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator — Hamed Gholami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+  <!-- animated background orbs -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="scanlines"></div>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-mark">HG</div>
+      <span class="logo-name">Hamed Gholami <span class="bull">·</span> Tiev25P</span>
+    </div>
+    <nav class="top-nav">
+      <a href="../index.html">Home</a>
+      <a href="../cv1.html">Portfolio</a>
+      <a href="work_experience.html">Work exp.</a>
+    </nav>
+    <div class="avail-pill">⬤ Available</div>
+  </header>
+
+  <!-- SIDE NAV -->
+  <aside class="sidenav">
+    <div class="snav-brand">Portfolio</div>
+    <a href="flex.html" class="snav-item"><span>›</span>Flex</a>
+    <a href="media.html" class="snav-item"><span>›</span>Regex</a>
+    <a href="task4.html" class="snav-item"><span>›</span>Discussion</a>
+    <a href="tasklist.html" class="snav-item"><span>›</span>Task List</a>
+    <a href="calculator.html" class="snav-item active"><span>›</span>Calculator</a>
+    <div class="snav-bottom">
+      <div class="snav-status">
+        <span class="dot-pulse"></span>Bug hunting
+      </div>
+    </div>
+  </aside>
+
+  <!-- PAGE -->
+  <main class="page">
+
+    <!-- big heading -->
+    <div class="hero-heading">
+      <div class="hero-eyebrow">God of Bugs · Arithmetic Engine</div>
+      <h1 class="hero-title">CALC<em>ULATOR</em></h1>
+      <p class="hero-sub">Precision. Power. Tiev25P.</p>
+    </div>
+
+    <!-- QUICK OPS -->
+    <div class="quick-row">
+      <button class="qbtn" onclick="quickOp('+')"><span>Σ</span>Summa</button>
+      <button class="qbtn" onclick="quickOp('-')"><span>−</span>Vahennys</button>
+      <button class="qbtn" onclick="quickOp('*')"><span>×</span>Kerto</button>
+      <button class="qbtn" onclick="quickOp('/')"><span>÷</span>Jako</button>
+      <button class="qbtn qbtn-odin" onclick="invokeOdin()"><span>⚡</span>Odin</button>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div class="calc-wrap">
+
+      <!-- glow ring decoration -->
+      <div class="calc-glow"></div>
+
+      <div class="calc-body">
+
+        <!-- display -->
+        <div class="calc-display">
+          <div class="display-tag">CALC-9000</div>
+          <div class="display-history" id="history">&nbsp;</div>
+          <div class="display-expr" id="expr">0</div>
+          <div class="display-bar"></div>
+        </div>
+
+        <!-- keypad -->
+        <div class="keypad">
+
+          <button class="key kfn wide2" onclick="clearDisplay()">AC</button>
+          <button class="key kfn"       onclick="toggleSign()">+/−</button>
+          <button class="key kop"       onclick="appendTodisplay('%')">%</button>
+          <button class="key kop big"   onclick="appendTodisplay('/')">÷</button>
+
+          <button class="key" onclick="appendTodisplay('7')">7</button>
+          <button class="key" onclick="appendTodisplay('8')">8</button>
+          <button class="key" onclick="appendTodisplay('9')">9</button>
+          <button class="key kop big"   onclick="appendTodisplay('*')">×</button>
+
+          <button class="key" onclick="appendTodisplay('4')">4</button>
+          <button class="key" onclick="appendTodisplay('5')">5</button>
+          <button class="key" onclick="appendTodisplay('6')">6</button>
+          <button class="key kop big"   onclick="appendTodisplay('-')">−</button>
+
+          <button class="key" onclick="appendTodisplay('1')">1</button>
+          <button class="key" onclick="appendTodisplay('2')">2</button>
+          <button class="key" onclick="appendTodisplay('3')">3</button>
+          <button class="key kop big"   onclick="appendTodisplay('+')">+</button>
+
+          <button class="key wide2"     onclick="appendTodisplay('0')">0</button>
+          <button class="key"           onclick="appendTodisplay('.')">.</button>
+          <button class="key keq"       onclick="calculate()">=</button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ODIN MODAL -->
+  <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <div class="modal-rune">᛭</div>
+      <div class="modal-eyebrow">The Odin Protocol</div>
+      <h2>I am the God of Bugs</h2>
+      <p>Hamed Gholami — Tiev25P — the one who bends code to his will and calls every error a lesson.</p>
+      <button class="modal-close" onclick="closeModal()">Close the gates</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="https://turku.inschool.fi/!02381831/">⬤ Wilma</a>
+    <a href="https://tai.fi">■ TAI</a>
+    <a href="https://taito.edu.turku.fi/">▶ Moodle</a>
+    <span class="footer-copy">Hamed Gholami © 2026 · Tiev25P</span>
+  </footer>
+
+  <script src="calculator.js"></script>
+</body>
+</html>

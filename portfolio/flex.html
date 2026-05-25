@@ -1,159 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="font.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flex.css">
-    <script src="flex.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex — Hamed Gholami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="flex.css">
 </head>
 <body>
-    <a href="../cv1.html">← Portfolio</a>
-    <br><br>
 
-    
-    <div class="container">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="scanlines"></div>
 
-       
-        <div class="column">
-            <h3>Pokémon</h3>
-
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu">
-                <span>Pikachu</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
-                <span>Squirtle</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
-                <span>Bulbasaur</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
-                <span>Charmander</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" alt="Jigglypuff">
-                <span>Jigglypuff</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" alt="Meowth">
-                <span>Meowth</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" alt="Psyduck">
-                <span>Psyduck</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" alt="Eevee">
-                <span>Eevee</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png" alt="Snorlax">
-                <span>Snorlax</span>
-            </div>
-            <div class="item">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="Gengar">
-                <span>Gengar</span>
-            </div>
-        </div>
-
-        
-        <div class="column">
-            <h3>Digimon</h3>
-
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/agumon.jpg" alt="Agumon">
-                <span>Agumon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/gabumon.jpg" alt="Gabumon">
-                <span>Gabumon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/patamon.jpg" alt="Patamon">
-                <span>Patamon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/gomamon.jpg" alt="Gomamon">
-                <span>Gomamon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/palmon.jpg" alt="Palmon">
-                <span>Palmon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/tentomon.jpg" alt="Tentomon">
-                <span>Tentomon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/biyomon.jpg" alt="Biyomon">
-                <span>Biyomon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/veemon.jpg" alt="Veemon">
-                <span>Veemon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/guilmon.jpg" alt="Guilmon">
-                <span>Guilmon</span>
-            </div>
-            <div class="item">
-                <img src="https://www.digimon.net/cat-digimon-encyclopedia/2016-08-01/renamon.jpg" alt="Renamon">
-                <span>Renamon</span>
-            </div>
-        </div>
-
-       
-        <div class="column">
-            <h3>Palworld</h3>
-
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/5/55/Lamball_menu.png" alt="Lamball">
-                <span>Lamball</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/a/a3/Cattiva_menu.png" alt="Cattiva">
-                <span>Cattiva</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/d/d1/Chikipi_menu.png" alt="Chikipi">
-                <span>Chikipi</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/4/4e/Lifmunk_menu.png" alt="Lifmunk">
-                <span>Lifmunk</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/9/90/Foxparks_menu.png" alt="Foxparks">
-                <span>Foxparks</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/d/d5/Fuack_menu.png" alt="Fuack">
-                <span>Fuack</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/d/d3/Sparkit_menu.png" alt="Sparkit">
-                <span>Sparkit</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/8/81/Tanzee_menu.png" alt="Tanzee">
-                <span>Tanzee</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/b/be/Rooby_menu.png" alt="Rooby">
-                <span>Rooby</span>
-            </div>
-            <div class="item">
-                <img src="https://static.wikia.nocookie.net/palworld/images/3/31/Pengullet_menu.png" alt="Pengullet">
-                <span>Pengullet</span>
-            </div>
-        </div>
-
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-mark">HG</div>
+      <span class="logo-name">Hamed Gholami <span class="bull">·</span> Tiev25P</span>
     </div>
+    <nav class="top-nav">
+      <a href="../index.html">Home</a>
+      <a href="../cv1.html">Portfolio</a>
+      <a href="work_experience.html">Work exp.</a>
+    </nav>
+    <div class="avail-pill">⬤ Available</div>
+  </header>
+
+  <!-- SIDENAV -->
+  <aside class="sidenav">
+    <div class="snav-brand">Portfolio</div>
+    <a href="flex.html"            class="snav-item active"><span>›</span>Flex</a>
+    <a href="media.html"           class="snav-item"><span>›</span>Regex</a>
+    <a href="task4.html"           class="snav-item"><span>›</span>Discussion</a>
+    <a href="tasklist.html"        class="snav-item"><span>›</span>Task List</a>
+    <a href="calculator.html"      class="snav-item"><span>›</span>Calculator</a>
+    <div class="snav-bottom">
+      <div class="snav-status"><span class="dot-pulse"></span>Bug hunting</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="page">
+
+    <div class="hero-heading">
+      <div class="eyebrow">Portfolio · Flex Layout</div>
+      <h1 class="hero-title">MON<em>STERS</em></h1>
+      <p class="hero-sub">Pokémon vs Digimon vs Palworld — the ultimate roster.</p>
+    </div>
+
+    <!-- ARENA -->
+    <div class="arena">
+
+      <!-- ── POKÉMON ── -->
+      <div class="column" data-faction="pokemon">
+        <div class="col-header">
+          <div class="col-badge badge-poke">PK</div>
+          <div>
+            <div class="col-title">Pokémon</div>
+            <div class="col-sub">Original monsters</div>
+          </div>
+          <div class="col-count">10</div>
+        </div>
+        <div class="col-body">
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Pikachu</span>
+              <span class="item-type type-electric">Electric</span>
+            </div>
+            <span class="item-num">#025</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Squirtle" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Squirtle</span>
+              <span class="item-type type-water">Water</span>
+            </div>
+            <span class="item-num">#007</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Bulbasaur</span>
+              <span class="item-type type-grass">Grass</span>
+            </div>
+            <span class="item-num">#001</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Charmander</span>
+              <span class="item-type type-fire">Fire</span>
+            </div>
+            <span class="item-num">#004</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png" alt="Jigglypuff" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Jigglypuff</span>
+              <span class="item-type type-normal">Normal</span>
+            </div>
+            <span class="item-num">#039</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png" alt="Meowth" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Meowth</span>
+              <span class="item-type type-normal">Normal</span>
+            </div>
+            <span class="item-num">#052</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png" alt="Psyduck" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Psyduck</span>
+              <span class="item-type type-water">Water</span>
+            </div>
+            <span class="item-num">#054</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png" alt="Eevee" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Eevee</span>
+              <span class="item-type type-normal">Normal</span>
+            </div>
+            <span class="item-num">#133</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png" alt="Snorlax" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Snorlax</span>
+              <span class="item-type type-normal">Normal</span>
+            </div>
+            <span class="item-num">#143</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png" alt="Gengar" loading="lazy">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Gengar</span>
+              <span class="item-type type-ghost">Ghost</span>
+            </div>
+            <span class="item-num">#094</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── DIGIMON ── (using digimon-api which allows hotlinking) -->
+      <div class="column" data-faction="digimon">
+        <div class="col-header">
+          <div class="col-badge badge-digi">DG</div>
+          <div>
+            <div class="col-title">Digimon</div>
+            <div class="col-sub">Digital monsters</div>
+          </div>
+          <div class="col-count">10</div>
+        </div>
+        <div class="col-body">
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Agumon.png" alt="Agumon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=AG'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Agumon</span>
+              <span class="item-type type-fire">Vaccine</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Gabumon.png" alt="Gabumon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=GB'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Gabumon</span>
+              <span class="item-type type-water">Data</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Patamon.png" alt="Patamon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=PT'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Patamon</span>
+              <span class="item-type type-normal">Data</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Gomamon.png" alt="Gomamon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=GM'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Gomamon</span>
+              <span class="item-type type-water">Data</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Palmon.png" alt="Palmon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=PM'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Palmon</span>
+              <span class="item-type type-grass">Data</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Tentomon.png" alt="Tentomon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=TT'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Tentomon</span>
+              <span class="item-type type-electric">Vaccine</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Biyomon.png" alt="Biyomon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=BY'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Biyomon</span>
+              <span class="item-type type-fire">Data</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Veemon.png" alt="Veemon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=VM'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Veemon</span>
+              <span class="item-type type-normal">Vaccine</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Guilmon.png" alt="Guilmon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=GL'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Guilmon</span>
+              <span class="item-type type-fire">Virus</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img src="https://digimon-api.com/images/digimon/w/Renamon.png" alt="Renamon" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=RN'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Renamon</span>
+              <span class="item-type type-ghost">Data</span>
+            </div>
+            <span class="item-num">Rookie</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── PALWORLD ── -->
+      <div class="column" data-faction="palworld">
+        <div class="col-header">
+          <div class="col-badge badge-pal">PW</div>
+          <div>
+            <div class="col-title">Palworld</div>
+            <div class="col-sub">Pals of the wild</div>
+          </div>
+          <div class="col-count">10</div>
+        </div>
+        <div class="col-body">
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/5/55/Lamball_menu.png" alt="Lamball" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=LB'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Lamball</span>
+              <span class="item-type type-normal">Neutral</span>
+            </div>
+            <span class="item-num">Pal #001</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/a/a3/Cattiva_menu.png" alt="Cattiva" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=CT'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Cattiva</span>
+              <span class="item-type type-normal">Neutral</span>
+            </div>
+            <span class="item-num">Pal #002</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/d/d1/Chikipi_menu.png" alt="Chikipi" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=CK'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Chikipi</span>
+              <span class="item-type type-normal">Neutral</span>
+            </div>
+            <span class="item-num">Pal #003</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/4/4e/Lifmunk_menu.png" alt="Lifmunk" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=LM'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Lifmunk</span>
+              <span class="item-type type-grass">Grass</span>
+            </div>
+            <span class="item-num">Pal #004</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/9/90/Foxparks_menu.png" alt="Foxparks" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=FP'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Foxparks</span>
+              <span class="item-type type-fire">Fire</span>
+            </div>
+            <span class="item-num">Pal #005</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/d/d5/Fuack_menu.png" alt="Fuack" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=FK'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Fuack</span>
+              <span class="item-type type-water">Water</span>
+            </div>
+            <span class="item-num">Pal #006</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/d/d3/Sparkit_menu.png" alt="Sparkit" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=SK'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Sparkit</span>
+              <span class="item-type type-electric">Electric</span>
+            </div>
+            <span class="item-num">Pal #007</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/8/81/Tanzee_menu.png" alt="Tanzee" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=TZ'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Tanzee</span>
+              <span class="item-type type-grass">Grass</span>
+            </div>
+            <span class="item-num">Pal #008</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/b/be/Rooby_menu.png" alt="Rooby" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=RB'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Rooby</span>
+              <span class="item-type type-fire">Fire</span>
+            </div>
+            <span class="item-num">Pal #009</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-wrap">
+              <img referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/palworld/images/3/31/Pengullet_menu.png" alt="Pengullet" loading="lazy" onerror="this.src='https://placehold.co/80x80/1a1a28/ff5c1a?text=PG'">
+            </div>
+            <div class="item-info">
+              <span class="item-name">Pengullet</span>
+              <span class="item-type type-water">Water</span>
+            </div>
+            <span class="item-num">Pal #010</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /arena -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="https://turku.inschool.fi/!02381831/">⬤ Wilma</a>
+    <a href="https://tai.fi">■ TAI</a>
+    <a href="https://taito.edu.turku.fi/">▶ Moodle</a>
+    <span class="footer-copy">Hamed Gholami © 2026 · Tiev25P</span>
+  </footer>
+
+  <script>console.log("Flex page opened");</script>
 </body>
 </html>

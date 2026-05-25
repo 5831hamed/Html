@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
+    <style>
+        /* Moved inline link color into stylesheet to avoid inline styles */
+        .skill-tag.hl a { color: white; }
+        .skill-tag.hl a[href*="tasklist"] { color: aliceblue; }
+    </style>
 </head>
 <body>
 
@@ -80,9 +85,9 @@
             <p class="sub-text">Welcome to Hamed&rsquo;s corner of the internet &mdash; where code is crafted, bugs are conquered, and every project is a new battle won. Tiev25P, class of legends.</p>
 
             <div class="skill-row">
-                <div class="skill-tag hl"><a style="color:white;" href="portfolio/task4.html">Discussion page</a></div>
-                <div class="skill-tag hl"><a style="color: aliceblue;" href="portfolio/tasklist.html">Task List</a></div>
-                <div class="skill-tag hl">JavaScript</div>
+                <div class="skill-tag hl"><a href="portfolio/task4.html">Discussion page</a></div>
+                <div class="skill-tag hl"><a href="portfolio/tasklist.html">Task List</a></div>
+                <div class="skill-tag hl"> <a href="portfolio/Calculator.html">Calculator</a></div>
                 <div class="skill-tag">Debugging</div>
                 <div class="skill-tag">Grid &amp; Flex</div>
                 <div class="skill-tag">Regex</div>
