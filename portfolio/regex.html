@@ -1,30 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="font.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="regex.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hamed Gholami">
+  <meta name="description" content="Hamed Gholami — Regex validation exercises">
+  <title>Hamed Gholami — Regex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="regex.css">
+  <script src="regex.js" defer></script>
 </head>
 <body>
-    <form>
-        <label for="plate">Enter a random plate number:</label>
-        <input id="plate" type="text" pattern="^[a-zA-Z]{3}-\d{3}$" required>
-        <button type="submit">Submit</button><br><br>
-        <label for="date">The date (DD.MM.YYYY):</label>
-        <input id="date" type="text" pattern="^\d{1,2}.\d{1,2}\.\d{4}$" required>
-        <button type="submit">Submit</button><br><br>
-        <label for="identity">Enter Your Identity code:</label>
-        <input id="identity" type="text" pattern="^\d{6}[-A]?\d{3}[A-Za-z0-9]$" required>
-        <button type="submit">Submit</button><br><br>
-        <label for="phone">Enter Your Phone Number:</label>
-        <input id="phone" type="text" pattern="^\d{7,10}$" required>
-        <button type="submit">Submit</button><br><br>
-        <label for="html">Write a simple HTML code:</label>
-        <input id="html" type="text" pattern="^&lt;.+&gt;.*&lt;/.+&gt;$" required>
-        <button type="submit">Submit</button>
-    </form>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Regex</span>
+      </div>
+      <div class="hdr-right">
+        <a href="../index.html">Home</a>
+        <a href="../cv1.html">Portfolio</a>
+        <a href="work_experience.html">Work exp.</a>
+        <span class="hdr-pill">Regex</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-item">&#8962; Main page</a>
+    <a href="../cv1.html" class="nav-item">&#9741; Portfolio</a>
+    <a href="work_experience.html" class="nav-item">&#9787; Work Experience</a>
+    <a href="task4.html" class="nav-item">&#9711; Discussion</a>
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside-head">More Pages</div>
+      <div class="aside-nav">
+        <a href="task4.html">&#9711; Discussion</a>
+        <a href="flex.html">&#9638; Flex</a>
+        <a href="regex.html" class="active">&#8727; Regex</a>
+        <a href="Calculator.html">&#9854; Calculator</a>
+        <a href="box.html">&#9632; Box</a>
+        <a href="media.html">&#9671; Media</a>
+      </div>
+      <div class="aside-decor">
+        <div class="stripe s1"></div>
+        <div class="stripe s2"></div>
+        <div class="stripe s3"></div>
+        <div class="stripe s4"></div>
+        <div class="stripe s5"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <div class="form-header">
+        <div class="form-badge">Regex</div>
+        <div class="form-title">Validation <em>Exercises</em></div>
+      </div>
+      <p class="sub-text">Fill in each field and hit Submit — each input is validated against a regular expression pattern.</p>
+
+      <div class="form-wrap">
+
+        <!-- Plate -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="plate">Plate number <span class="pattern-hint">ABC-123</span></label>
+            <div class="input-row">
+              <input id="plate" type="text" pattern="^[a-zA-Z]{3}-\d{3}$" placeholder="e.g. ABC-123" required>
+              <button type="button" class="submit-btn" onclick="validate('plate')">Submit</button>
+            </div>
+            <div class="field-feedback" id="plate-feedback"></div>
+          </div>
+        </div>
+
+        <!-- Date -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="date">Date <span class="pattern-hint">DD.MM.YYYY</span></label>
+            <div class="input-row">
+              <input id="date" type="text" pattern="^\d{1,2}\.\d{1,2}\.\d{4}$" placeholder="e.g. 07.10.2005" required>
+              <button type="button" class="submit-btn" onclick="validate('date')">Submit</button>
+            </div>
+            <div class="field-feedback" id="date-feedback"></div>
+          </div>
+        </div>
+
+        <!-- Identity code -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="identity">Identity code <span class="pattern-hint">DDMMYY±NNNx</span></label>
+            <div class="input-row">
+              <input id="identity" type="text" pattern="^\d{6}[-A]?\d{3}[A-Za-z0-9]$" placeholder="e.g. 071005A123X" required>
+              <button type="button" class="submit-btn" onclick="validate('identity')">Submit</button>
+            </div>
+            <div class="field-feedback" id="identity-feedback"></div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="phone">Phone number <span class="pattern-hint">7–10 digits</span></label>
+            <div class="input-row">
+              <input id="phone" type="text" pattern="^\d{7,10}$" placeholder="e.g. 0408195941" required>
+              <button type="button" class="submit-btn" onclick="validate('phone')">Submit</button>
+            </div>
+            <div class="field-feedback" id="phone-feedback"></div>
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="form-row last">
+          <div class="field-block">
+            <label for="html">Simple HTML tag <span class="pattern-hint">&lt;tag&gt;content&lt;/tag&gt;</span></label>
+            <div class="input-row">
+              <input id="html" type="text" pattern="^<.+>.*</.+>$" placeholder="e.g. &lt;p&gt;Hello&lt;/p&gt;" required>
+              <button type="button" class="submit-btn" onclick="validate('html')">Submit</button>
+            </div>
+            <div class="field-feedback" id="html-feedback"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+    <a href="https://tai.fi">&#9632; TAI</a>
+    <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+    <div class="footer-copy">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+  </footer>
+
+</div>
 </body>
 </html>

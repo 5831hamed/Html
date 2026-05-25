@@ -1,9 +1,5 @@
 console.log("Main page opened");
 
-function hello() {
-    openModal();
-}
-
 function openModal() {
     document.getElementById('modal').classList.add('open');
 }
