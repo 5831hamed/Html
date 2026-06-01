@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Strings — Hamed Gholami</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="strings.css">
+</head>
+
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="hdr-inner">
+
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Strings</span>
+      </div>
+
+      <div class="hdr-right">
+        <a href="../index.html">Home</a>
+        <a href="../cv1.html">Portfolio</a>
+        <a href="work_experience.html">Work exp.</a>
+
+        <span class="hdr-pill">
+          Strings
+        </span>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- NAV -->
+
+  <nav>
+
+    <a href="../index.html" class="nav-item">
+      &#8962; Main page
+    </a>
+
+    <a href="../cv1.html" class="nav-item">
+      &#9741; Portfolio
+    </a>
+
+    <a href="work_experience.html" class="nav-item">
+      &#9787; Work Experience
+    </a>
+
+  </nav>
+
+  <!-- BODY -->
+
+  <div class="body">
+
+    <!-- ASIDE -->
+
+    <aside>
+      <div class="aside-head">Projects</div>
+      <div class="aside-nav">
+        <a href="flex.html"><span class="ai-num">1</span> Flex <span class="ai-arr"></span></a>
+        <a href="Calculator.html"><span class="ai-num">2</span> Calculator <span class="ai-arr"></span></a>
+        <a href="../semantic.html"><span class="ai-num">3</span> Semantic <span class="ai-arr"></span></a>
+        <a href="media.html"><span class="ai-num">4</span> Media <span class="ai-arr"></span></a>
+        <a href="regex.html"><span class="ai-num">5</span> Regex <span class="ai-arr"></span></a>
+        <a href="task4.html"><span class="ai-num">6</span> Discussion <span class="ai-arr"></span></a>
+        <a href="henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot<span class="ai-arr"></span></a>
+        <a href="tasklist.html"><span class="ai-num">8</span> Task List <span class="ai-arr"></span></a>
+        <a href="casino.html"><span class="ai-num">9</span> Casino <span class="ai-arr"></span></a>
+        <a href="strings.html"><span class="ai-num">10</span> Strings <span class="ai-arr"></span></a>
+        <a href="tables.html"><span class="ai-num">11</span> Tables <span class="ai-arr"></span></a>
+        <a href="kategoriat.html"><span class="ai-num">12</span> Kategoriat <span class="ai-arr"></span></a>
+      </div>
+      <div class="aside-foot">
+        <div class="tech-pills">
+        </div>
+      </div>
+        
+    </aside>
+
+    <!-- MAIN -->
+
+    <main>
+
+      <div>
+
+        <div class="form-header">
+
+          <div class="form-badge">
+            Text Engine
+          </div>
+
+          <div class="form-title">
+            Str<em>ings</em>
+          </div>
+
+        </div>
+
+        <p class="sub-text">
+          String methods. JavaScript. Tiev25P.
+        </p>
+
+      </div>
+
+      <!-- PICK LETTER -->
+
+      <div class="card">
+
+        <h2>Pick a Letter</h2>
+
+        <input type="text" id="pickText" placeholder="Enter text">
+
+        <input type="number" id="pickIndex" placeholder="Enter number">
+
+        <button onclick="pickLetter()" class="qbtn">
+          Show
+        </button>
+
+        <div id="pickResult" class="result-box"></div>
+
+      </div>
+
+      <!-- FIND INDEX -->
+
+      <div class="card">
+
+        <h2>Find Index</h2>
+
+        <input type="text" id="indexText" placeholder="Enter text">
+
+        <input type="text" id="indexSearch" placeholder="Find text">
+
+        <button onclick="findIndex()" class="qbtn">
+          Show
+        </button>
+
+        <div id="indexResult" class="result-box"></div>
+
+      </div>
+
+      <!-- CUT STRING -->
+
+      <div class="card">
+
+        <h2>Cut String</h2>
+
+        <input type="text" id="sliceText" placeholder="Enter text">
+
+        <input type="number" id="sliceStart" placeholder="Start">
+
+        <input type="number" id="sliceEnd" placeholder="End">
+
+        <button onclick="cutString()" class="qbtn">
+          Show
+        </button>
+
+        <div id="sliceResult" class="result-box"></div>
+
+      </div>
+
+      <!-- FIND AND REPLACE -->
+
+      <div class="card">
+
+        <h2>Find and Replace</h2>
+
+        <input type="text" id="replaceText" placeholder="Original text">
+
+        <input type="text" id="replaceOld" placeholder="Find">
+
+        <input type="text" id="replaceNew" placeholder="Replace with">
+
+        <button onclick="replaceText()" class="qbtn">
+          Show
+        </button>
+
+        <div id="replaceResult" class="result-box"></div>
+
+      </div>
+
+      <!-- CROSS AND STACK -->
+
+      <div class="card">
+
+        <h2>Cross and Stack</h2>
+
+        <input type="text" id="splitText" placeholder="Enter text">
+
+        <input type="text" id="splitChar" placeholder="Split character">
+
+        <button onclick="crossStack()" class="qbtn">
+          Show
+        </button>
+
+        <ul id="splitResult" class="list-box"></ul>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <a href="https://turku.inschool.fi/!02381831/">
+      &#9673; Wilma
+    </a>
+
+    <a href="https://tai.fi">
+      &#9632; TAI
+    </a>
+
+    <a href="https://taito.edu.turku.fi/">
+      &#9654; Moodle
+    </a>
+
+    <div class="footer-copy">
+      Hamed Gholami &copy; 2026
+    </div>
+
+  </footer>
+
+</div>
+
+<script src="strings.js"></script>
+
+</body>
+</html>

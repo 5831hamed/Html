@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tables</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tables.css">
+</head>
+
+<body>
+
+<div class="site">
+
+<header>
+  <div class="hdr-inner">
+    <div class="hdr-left">
+      <h1>Hamed<br>Gholami</h1>
+      <span>Tables</span>
+    </div>
+
+    <div class="hdr-right">
+      <a href="../index.html">Home</a>
+      <a href="../cv1.html">Portfolio</a>
+      <span class="hdr-pill">Tables</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a class="nav-item" href="../index.html">Home</a>
+  <a class="nav-item" href="../cv1.html">Portfolio</a>
+  <a class="nav-item" href="Calculator.html">Calculator</a>
+</nav>
+
+<div class="body">
+
+<!-- SIDEBAR (FIXED NUMBERS) -->
+<aside>
+
+  <div class="aside-head">Projects</div>
+
+  <div class="aside-nav">
+    <a href="flex.html"><span class="ai-num">1</span>Flex</a>
+    <a href="Calculator.html"><span class="ai-num">2</span>Calculator</a>
+    <a href="../semantic.html"><span class="ai-num">3</span>Semantic</a>
+    <a href="media.html"><span class="ai-num">4</span>Media</a>
+    <a href="regex.html"><span class="ai-num">5</span>Regex</a>
+    <a href="task4.html"><span class="ai-num">6</span>Discussion</a>
+    <a href="henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot</a>
+    <a href="tasklist.html"><span class="ai-num">8</span>Task List</a>
+    <a href="casino.html"><span class="ai-num">9</span>Casino</a>
+    <a href="strings.html"><span class="ai-num">10</span>Strings</a>
+    <a href="tables.html" class=""><span class="ai-num">11</span>Tables</a>
+    <a href="kategoriat.html"><span class="ai-num">12</span>Kategoriat</a>
+  </div>
+
+</aside>
+
+<main>
+
+<h2>Tables</h2>
+
+<!-- 1 -->
+<h3>Pick an Element</h3>
+<input id="i1" type="number">
+<button onclick="pickElement()">Show</button>
+<div id="r1" class="box"></div>
+
+<!-- 2 -->
+<h3>Find Index</h3>
+<input id="t1">
+<button onclick="findIndex()">Show</button>
+<div id="r2" class="box"></div>
+
+<!-- 3 -->
+<h3>Cut Table</h3>
+<input id="c1" type="number">
+<input id="c2" type="number">
+<button onclick="cutTable()">Show</button>
+<ul id="r3"></ul>
+
+<!-- 4 -->
+<h3>Arrange</h3>
+<button onclick="printWords()">Print Texts</button>
+<button onclick="sortWords()">Arrange Texts</button>
+<button onclick="reverseWords()">Reverse Text Order</button>
+
+<button onclick="printNumbers()">Print Numbers</button>
+<button onclick="sortNumbers()">Arrange Numbers</button>
+<button onclick="reverseNumbers()">Reverse Number Order</button>
+
+<ul id="r4"></ul>
+
+<!-- 5 -->
+<h3>Filter</h3>
+<input id="f1" type="number">
+<button onclick="printNums()">Print numbers</button>
+<button onclick="selectSmaller()">Select smaller</button>
+<button onclick="selectLarger()">Select larger</button>
+
+<ul id="r5"></ul>
+
+</main>
+</div>
+</div>
+
+<script src="tables.js"></script>
+</body>
+</html>

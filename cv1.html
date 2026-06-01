@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hamed Gholami — Student, Developer, Turku Finland">
+  <meta name="author" content="Hamed Gholami">
+  <title>Hamed Gholami — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Portfolio</span>
+      </div>
+      <div class="hdr-right">
+        <a href="index.html">Home</a>
+        <a href="cv1.html" class=>Portfolio</a>
+        <a href="portfolio/work_experience.html">Work exp.</a>
+        <a href="portfolio/task4.html">Discussion</a>
+        <span class="hdr-pill">Open to work</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-item">&#8962; Main page</a>
+    <a href="cv1.html" class="nav-item active">&#9741; Portfolio</a>
+    <a href="portfolio/work_experience.html" class="nav-item">&#9787; Work Experience</a>
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside-head">Projects</div>
+      <div class="aside-nav">
+        <a href="portfolio/flex.html"><span class="ai-num">1</span> Flex <span class="ai-arr">↗</span></a>
+        <a href="portfolio/Calculator.html"><span class="ai-num">2</span> Calculator <span class="ai-arr">↗</span></a>
+        <a href="semantic.html"><span class="ai-num">3</span> Semantic <span class="ai-arr">↗</span></a>
+        <a href="portfolio/media.html"><span class="ai-num">4</span> Media <span class="ai-arr">↗</span></a>
+        <a href="portfolio/regex.html"><span class="ai-num">5</span> Regex <span class="ai-arr">↗</span></a>
+        <a href="portfolio/task4.html"><span class="ai-num">6</span> Discussion <span class="ai-arr">↗</span></a>
+        <a href="portfolio/henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot<span class="ai-arr">↗</span></a>
+        <a href="portfolio/tasklist.html"><span class="ai-num">8</span> Task List <span class="ai-arr">↗</span></a>
+      </div>
+      <div class="aside-foot">
+        <div class="stack-label">Stack</div>
+        <div class="tech-pills">
+          <span>HTML</span><span>CSS</span><span>JS</span>
+        </div>
+      </div>
+      <div class="aside-decor">
+        <div class="stripe s1"></div>
+        <div class="stripe s2"></div>
+        <div class="stripe s3"></div>
+        <div class="stripe s4"></div>
+        <div class="stripe s5"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- Hero -->
+      <div class="form-header">
+        <div class="form-badge">Portfolio 2025</div>
+        <div class="form-title">Hello, I'm <em>Hamed.</em></div>
+      </div>
+      <p class="sub-text">Student &middot; Developer &middot; Turku, Finland</p>
+
+      <div class="hero-chips">
+        <span class="chip">🔥 Cook</span>
+        <span class="chip">💪 Gym</span>
+        <span class="chip">🥋 Taekwondo</span>
+        <span class="chip">✏️ Drawing</span>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="comment-grid cards-grid">
+
+        <!-- Personal Info — wide -->
+        <div class="ccard purple wide" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-purple">01</div>
+            <div>
+              <div class="cc-name">Personal Info</div>
+              <div class="cc-meta">Hamed Gholami · Tiev25P · TAI Turku</div>
+            </div>
+          </div>
+          <div class="info-grid">
+            <div class="info-item"><span class="info-k">Name</span><span class="info-v">Hamed Gholami</span></div>
+            <div class="info-item"><span class="info-k">Born</span><span class="info-v">07.10.2005</span></div>
+            <div class="info-item"><span class="info-k">Phone</span><span class="info-v">040 819 5941</span></div>
+            <div class="info-item"><span class="info-k">Email</span><span class="info-v">Moria7gh@gmail.com</span></div>
+            <div class="info-item"><span class="info-k">Location</span><span class="info-v">Turku, Finland</span></div>
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="ccard blue" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-blue">02</div>
+            <div>
+              <div class="cc-name">Profile</div>
+              <div class="cc-meta">About me</div>
+            </div>
+          </div>
+          <div class="cc-body">Motivated programming student with a background in professional kitchens. I thrive under pressure, enjoy teamwork, and am building skills in web development and software engineering.</div>
+        </div>
+
+        <!-- Education -->
+        <div class="ccard green" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-green">03</div>
+            <div>
+              <div class="cc-name">Education</div>
+              <div class="cc-meta">Schools attended</div>
+            </div>
+          </div>
+          <ul class="card-list">
+            <li><span class="li-dot" style="--c:#a78bfa"></span><div><strong>TAI School</strong><br><small>Programming — Current</small></div></li>
+            <li><span class="li-dot" style="--c:#0d9488"></span><div><strong>IB High School</strong><br><small>Turku</small></div></li>
+            <li><span class="li-dot" style="--c:#ff6b35"></span><div><strong>Basic Education</strong><br><small>Alma</small></div></li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="ccard amber" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-amber">04</div>
+            <div>
+              <div class="cc-name">Languages</div>
+              <div class="cc-meta">Spoken languages</div>
+            </div>
+          </div>
+          <div class="lang-bars">
+            <div class="lang-row">
+              <span class="lang-name">Persian</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:100%;--c:#ff6b35"></div></div>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:90%;--c:#004e89"></div></div>
+              <span class="lang-level">Excellent</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Finnish</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:60%;--c:#1a936f"></div></div>
+              <span class="lang-level">Good</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies — wide -->
+        <div class="ccard green wide" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-green">05</div>
+            <div>
+              <div class="cc-name">Hobbies</div>
+              <div class="cc-meta">Outside the screen</div>
+            </div>
+          </div>
+          <div class="hobby-grid">
+            <div class="hobby-item"><div class="hobby-icon">💪</div><span>Gym</span></div>
+            <div class="hobby-item"><div class="hobby-icon">🥋</div><span>Taekwondo</span></div>
+            <div class="hobby-item"><div class="hobby-icon">✏️</div><span>Drawing</span></div>
+            <div class="hobby-item"><div class="hobby-icon">🔥</div><span>Cooking</span></div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+    <a href="https://tai.fi">&#9632; TAI</a>
+    <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+    <div class="footer-copy">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@font-face{
+    font-family: "hamed's special font";
+    src: url("./Playball-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:"hamid";
+    src: url("./AmaticSC-Regular.ttf");
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "hamed's special font";
+  font-size: 60px;
+  text-align: center;
+}
+
+
+p{
+    font-family: "hamid";
+    font-size: 30px;
+    
+}
+
+a{
+    font-family: "hamid";
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+header {
+    font-family: "hamed's special font";
+    font-size: 60px;
+    text-align: center;
+}
+aside a {
+    color: white;
+}

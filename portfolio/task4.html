@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="hamed gholami, hamed, gholami, hamedgholami, hamed gholami cv, hamed gholami portfolio, hamed gholami discussion, hamed gholami media">
+    <meta name="author" content="Yousefalmasri">
+    <meta name="description" content="Hamed Gholami's personal website and portfolio">
+    <title>Discussion Page</title>
+    <link rel="stylesheet" href="task4.css">
+    <script src="task4.js" defer></script>
+</head>
+<body>
+
+<div class="site">
+
+    <header>
+        <div class="hdr-inner">
+            <div class="hdr-left">
+                <h1>Hamed<br>Gholami</h1>
+                <span>Discussion</span>
+            </div>
+            <div class="hdr-right">
+                <a href="index.html">Home</a>
+                <a href="../cv1.html">Portfolio</a>
+                <a href="work_experience.html">Work Experience</a>
+                <a href="media.html">Media</a>
+                <span class="hdr-pill">Live</span>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+    <a href="../index.html" class="nav-item">&#8962; Main page</a>
+    <a href="../cv1.html" class="nav-item">&#9741; Portfolio</a>
+    <a href="work_experience.html" class="nav-item">&#9787; Work Experience</a>
+  </nav>
+    
+    <div class="body">
+        
+        <aside>
+      <div class="aside-head">Projects</div>
+      <div class="aside-nav">
+        <a href="flex.html"><span class="ai-num">1</span> Flex <span class="ai-arr"></span></a>
+        <a href="Calculator.html"><span class="ai-num">2</span> Calculator <span class="ai-arr"></span></a>
+        <a href="../semantic.html"><span class="ai-num">3</span> Semantic <span class="ai-arr"></span></a>
+        <a href="media.html"><span class="ai-num">4</span> Media <span class="ai-arr"></span></a>
+        <a href="regex.html"><span class="ai-num">5</span> Regex <span class="ai-arr"></span></a>
+        <a href="task4.html"><span class="ai-num">6</span> Discussion <span class="ai-arr"></span></a>
+        <a href="henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot<span class="ai-arr"></span></a>
+        <a href="tasklist.html"><span class="ai-num">8</span> Task List <span class="ai-arr"></span></a>
+        <a href="casino.html"><span class="ai-num">9</span> Casino <span class="ai-arr"></span></a>
+        <a href="strings.html"><span class="ai-num">10</span> Strings <span class="ai-arr"></span></a>
+        <a href="tables.html"><span class="ai-num">11</span> Tables <span class="ai-arr"></span></a>
+        <a href="kategoriat.html"><span class="ai-num">12</span> Kategoriat <span class="ai-arr"></span></a>
+      </div>
+      <div class="aside-foot">
+        <div class="tech-pills">
+        </div>
+      </div>
+     
+    </aside>
+
+        <main>
+            <div class="form-header">
+                <div class="form-badge">New message</div>
+                <div class="form-title">What's on your mind?</div>
+            </div>
+
+            <form class="form-wrap" onsubmit="send(event)">
+                <div class="form-row">
+                    <div class="field-block">
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="field-block">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field-block">
+                        <label for="Message-type">Message type</label>
+                        <select id="Message-type" name="Message-type" required>
+                            <option>Kysymys</option>
+                            <option>Ehdotus</option>
+                        </select>
+                    </div>
+                    <div class="field-block">
+                        <label for="usage">Usage</label>
+                        <input type="text" id="usage" name="usage" placeholder="What's this about?">
+                    </div>
+                </div>
+                <div class="form-row single">
+                    <div class="field-block">
+                        <label for="body">Your message</label>
+                        <textarea id="body" name="body" rows="5" required placeholder="Write freely — questions, ideas, anything…"></textarea>
+                    </div>
+                </div>
+                <div class="form-action">
+                    <label class="consent-label">
+                        <input type="checkbox" id="consent" required>
+                        I agree to send this message
+                    </label>
+                    <button type="submit" class="send-btn">&#10148; Send it</button>
+                </div>
+            </form>
+
+            <div class="comments-header">
+                <div class="comments-title">What people are saying</div>
+                <div class="comments-count">5 comments</div>
+            </div>
+
+            <div class="comment-grid">
+
+                <div class="ccard green">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-green">KB</div>
+                        <div>
+                            <div class="cc-name">kuba@gamer.fi</div>
+                            <div class="cc-meta">18 March 2026 &middot; 18:36</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">Really nice website, I love it and enjoy it. Well done!</div>
+                </div>
+
+                <div class="ccard blue">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-blue">YA</div>
+                        <div>
+                            <div class="cc-name">yousef@almesri</div>
+                            <div class="cc-meta">16 Feb 2025 &middot; 13:45</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">I'm from Kurdistan. This website is just amazing, I love working with it.</div>
+                </div>
+
+                <div class="ccard neg">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-red">YK</div>
+                        <div>
+                            <div class="cc-name">Yaroslav@koval</div>
+                            <div class="cc-meta">07 Aug 2022 &middot; 6:04</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">I kind of hate this website, looks like a scam.</div>
+                </div>
+
+                <div class="ccard amber">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-amber">TS</div>
+                        <div>
+                            <div class="cc-name">tomas@shelby.fi</div>
+                            <div class="cc-meta">05 March 2024 &middot; 12:00</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">Mä eeen tyykkän se weppi sivuu.</div>
+                </div>
+
+                <div class="ccard purple wide">
+                    <div class="cc-top">
+                        <div class="cc-avatar av-purple">HG</div>
+                        <div>
+                            <div class="cc-name">hamed.gholami.afg</div>
+                            <div class="cc-meta">18 March 2026 &middot; 15:14</div>
+                        </div>
+                    </div>
+                    <div class="cc-body">I personally love it, looks nice, everything is good!</div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+        <a href="https://tai.fi">&#9632; TAI</a>
+        <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+        <div class="footer-copy">Hamed Gholami &copy; 2026</div>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List — Hamed Gholami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tasklist.css">
+</head>
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Task List</span>
+      </div>
+      <div class="hdr-right">
+        <a href="../index.html">Home</a>
+        <a href="../cv1.html">Portfolio</a>
+        <a href="work_experience.html">Work exp.</a>
+        <span class="hdr-pill">Task List</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-item">&#8962; Main page</a>
+    <a href="../cv1.html" class="nav-item">&#9741; Portfolio</a>
+    <a href="work_experience.html" class="nav-item">&#9787; Work Experience</a>
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+     <aside>
+      <div class="aside-head">Projects</div>
+      <div class="aside-nav">
+        <a href="flex.html"><span class="ai-num">1</span> Flex <span class="ai-arr"></span></a>
+        <a href="Calculator.html"><span class="ai-num">2</span> Calculator <span class="ai-arr"></span></a>
+        <a href="../semantic.html"><span class="ai-num">3</span> Semantic <span class="ai-arr"></span></a>
+        <a href="media.html"><span class="ai-num">4</span> Media <span class="ai-arr"></span></a>
+        <a href="regex.html"><span class="ai-num">5</span> Regex <span class="ai-arr"></span></a>
+        <a href="task4.html"><span class="ai-num">6</span> Discussion <span class="ai-arr"></span></a>
+        <a href="henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot<span class="ai-arr"></span></a>
+        <a href="tasklist.html"><span class="ai-num">8</span> Task List <span class="ai-arr"></span></a>
+        <a href="casino.html"><span class="ai-num">9</span> Casino <span class="ai-arr"></span></a>
+        <a href="strings.html"><span class="ai-num">10</span> Strings <span class="ai-arr"></span></a>
+        <a href="tables.html"><span class="ai-num">11</span> Tables <span class="ai-arr"></span></a>
+        <a href="kategoriat.html"><span class="ai-num">12</span> Kategoriat <span class="ai-arr"></span></a>
+      </div>
+      <div class="aside-foot">
+        <div class="tech-pills">
+        </div>
+      </div>
+      
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <div>
+        <div class="form-header">
+          <div class="form-badge">To-Do</div>
+          <div class="form-title">Task <em>List</em></div>
+        </div>
+        <p class="sub-text">Add your tasks below and keep track of what needs to be done.</p>
+      </div>
+
+      <div class="add-row">
+          <input type="text" id="yaraslav" placeholder="Write a new task...">
+          <input type="number" id="maara" placeholder="Number of tasks" value="1" min="1" />
+        <button onclick="add()">Add</button>
+      </div>
+
+      <ul id="hamed"></ul>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+    <a href="https://tai.fi">&#9632; TAI</a>
+    <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+    <div class="footer-copy">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+  </footer>
+
+</div>
+
+<script src="tasklist.js"></script>
+</body>
+</html>

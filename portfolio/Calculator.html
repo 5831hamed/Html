@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator — Hamed Gholami</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="hdr-inner">
+
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Calculator</span>
+      </div>
+
+      <div class="hdr-right">
+        <a href="../index.html">Home</a>
+        <a href="../cv1.html">Portfolio</a>
+        <a href="work_experience.html">Work exp.</a>
+
+        <span class="hdr-pill">
+          Calculator
+        </span>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- NAV -->
+  <nav>
+
+    <a href="../index.html" class="nav-item">
+      &#8962; Main page
+    </a>
+
+    <a href="../cv1.html" class="nav-item">
+      &#9741; Portfolio
+    </a>
+
+    <a href="work_experience.html" class="nav-item">
+      &#9787; Work Experience
+    </a>
+
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+    <aside>
+
+      <div class="aside-head">
+        Projects
+      </div>
+
+      <div class="aside-nav">
+
+        <a href="flex.html">
+          <span class="ai-num">1</span>
+          Flex
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="Calculator.html">
+          <span class="ai-num">2</span>
+          Calculator
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="../semantic.html">
+          <span class="ai-num">3</span>
+          Semantic
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="media.html">
+          <span class="ai-num">4</span>
+          Media
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="regex.html">
+          <span class="ai-num">5</span>
+          Regex
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="task4.html">
+          <span class="ai-num">6</span>
+          Discussion
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="henkilotiedot.html">
+          <span class="ai-num">7</span>
+          Henkilotiedot
+          <span class="ai-arr"></span>
+        </a>
+
+        <a href="tasklist.html">
+          <span class="ai-num">8</span>
+          Task List
+          <span class="ai-arr"></span>
+        </a>
+        <a href="casino.html">
+          <span class="ai-num">9</span>
+          Casino
+          <span class="ai-arr"></span>
+        </a>
+        <a href="strings.html">
+          <span class="ai-num">10</span>
+          Strings
+          <span class="ai-arr"></span>
+        </a>
+        <a href="tables.html">
+          <span class="ai-num">11</span>
+          Tables
+          <span class="ai-arr"></span>
+        </a>
+        <a href="kategoriat.html">
+          <span class="ai-num">12</span>
+          Kategoriat
+          <span class="ai-arr"></span>
+        </a>
+
+      </div>
+
+      <div class="aside-foot">
+        <div class="tech-pills"></div>
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <div>
+
+        <div class="form-header">
+
+          <div class="form-badge">
+            Arithmetic Engine
+          </div>
+
+          <div class="form-title">
+            Calc<em>ulator</em>
+          </div>
+
+        </div>
+
+        <p class="sub-text">
+          Precision. Power. Tiev25P.
+        </p>
+
+      </div>
+
+      <!-- QUICK OPS -->
+      <div class="quick-row">
+
+        <button class="qbtn" onclick="quickOp('+')">
+          <span>Σ</span>Summa
+        </button>
+
+        <button class="qbtn" onclick="quickOp('-')">
+          <span>−</span>Vahennys
+        </button>
+
+        <button class="qbtn" onclick="quickOp('*')">
+          <span>×</span>Kerto
+        </button>
+
+        <button class="qbtn" onclick="quickOp('/')">
+          <span>÷</span>Jako
+        </button>
+
+        <button class="qbtn qbtn-odin" onclick="invokeOdin()">
+          <span>⚡</span>Odin
+        </button>
+
+        <!-- NEW MATH OBJECT BUTTONS -->
+
+        <button class="qbtn" onclick="mathAbs()">
+          <span>|x|</span>Abs
+        </button>
+
+        <button class="qbtn" onclick="mathSqrt()">
+          <span>√</span>Sqrt
+        </button>
+
+        <button class="qbtn" onclick="mathPow()">
+          <span>x²</span>Pow
+        </button>
+
+        <button class="qbtn" onclick="mathMax()">
+          <span>↑</span>Max
+        </button>
+
+        <button class="qbtn" onclick="mathMin()">
+          <span>↓</span>Min
+        </button>
+
+        <button class="qbtn" onclick="mathRound()">
+          <span>≈</span>Round
+        </button>
+
+      </div>
+
+      <!-- CALCULATOR -->
+      <div class="calc-wrap">
+
+        <div class="calc-body">
+
+          <div class="calc-display">
+
+            <div class="display-tag">
+              CALC-9000
+            </div>
+
+            <div class="display-history" id="history">
+              &nbsp;
+            </div>
+
+            <div class="display-expr" id="expr">
+              0
+            </div>
+
+            <div class="display-bar"></div>
+
+          </div>
+
+          <div class="keypad">
+
+            <button class="key kfn wide2" onclick="clearDisplay()">
+              AC
+            </button>
+
+            <button class="key kfn" onclick="toggleSign()">
+              +/−
+            </button>
+
+            <button class="key kop" onclick="appendTodisplay('%')">
+              %
+            </button>
+
+            <button class="key kop big" onclick="appendTodisplay('/')">
+              ÷
+            </button>
+
+            <button class="key" onclick="appendTodisplay('7')">
+              7
+            </button>
+
+            <button class="key" onclick="appendTodisplay('8')">
+              8
+            </button>
+
+            <button class="key" onclick="appendTodisplay('9')">
+              9
+            </button>
+
+            <button class="key kop big" onclick="appendTodisplay('*')">
+              ×
+            </button>
+
+            <button class="key" onclick="appendTodisplay('4')">
+              4
+            </button>
+
+            <button class="key" onclick="appendTodisplay('5')">
+              5
+            </button>
+
+            <button class="key" onclick="appendTodisplay('6')">
+              6
+            </button>
+
+            <button class="key kop big" onclick="appendTodisplay('-')">
+              −
+            </button>
+
+            <button class="key" onclick="appendTodisplay('1')">
+              1
+            </button>
+
+            <button class="key" onclick="appendTodisplay('2')">
+              2
+            </button>
+
+            <button class="key" onclick="appendTodisplay('3')">
+              3
+            </button>
+
+            <button class="key kop big" onclick="appendTodisplay('+')">
+              +
+            </button>
+
+            <button class="key wide2" onclick="appendTodisplay('0')">
+              0
+            </button>
+
+            <button class="key" onclick="appendTodisplay('.')">
+              .
+            </button>
+
+            <button class="key keq" onclick="calculate()">
+              =
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- DATE & TIME BUTTON -->
+      <button class="qbtn" onclick="showDateTime()" style="align-self:flex-start;">
+
+        <span>&#128197;</span>
+        Date &amp; Time
+
+      </button>
+
+      <div id="daynumber"></div>
+      <div id="time"></div>
+      <div id="dayAndTime"></div>
+      <div id="dayoftheweek"></div>
+      <div id="month"></div>
+
+      <!-- SETS SECTION -->
+
+      <section id="Veijo">
+        <h2>Veijo</h2>
+        <ul id="veijo-list"></ul>
+      </section>
+
+      <section id="Elvira">
+        <h2>Elvira</h2>
+        <ul id="elvira-list"></ul>
+      </section>
+
+      <section id="Mehdi">
+        <h2>Mehdi</h2>
+        <ul id="mehdi-list"></ul>
+      </section>
+
+      <section id="Tuuli">
+        <h2>Tuuli</h2>
+        <ul id="tuuli-list"></ul>
+      </section>
+
+      <ul id="veijotuuli"></ul>
+      <ul id="mehdielvira"></ul>
+      <ul id="elviratuuli"></ul>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <a href="https://turku.inschool.fi/!02381831/">
+      &#9673; Wilma
+    </a>
+
+    <a href="https://tai.fi">
+      &#9632; TAI
+    </a>
+
+    <a href="https://taito.edu.turku.fi/">
+      &#9654; Moodle
+    </a>
+
+    <div class="footer-copy">
+      Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P
+    </div>
+
+  </footer>
+
+</div>
+
+<!-- ODIN MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+
+  <div class="modal-box">
+
+    <div class="modal-rune">
+      &#5423;
+    </div>
+
+    <div class="modal-eyebrow">
+      The Odin Protocol
+    </div>
+
+    <h2>
+      I am the God of Bugs
+    </h2>
+
+    <p>
+      Hamed Gholami &mdash; Tiev25P &mdash;
+      the one who bends code to his will and
+      calls every error a lesson.
+    </p>
+
+    <button class="modal-close" onclick="closeModal()">
+      Close the gates
+    </button>
+
+  </div>
+
+</div>
+
+<script src="calculator.js"></script>
+
+</body>
+</html>

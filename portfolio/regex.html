@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hamed Gholami">
+  <meta name="description" content="Hamed Gholami — Regex validation exercises">
+  <title>Hamed Gholami — Regex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="regex.css">
+  <script src="regex.js" defer></script>
+</head>
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Regex</span>
+      </div>
+      <div class="hdr-right">
+        <a href="../index.html">Home</a>
+        <a href="../cv1.html">Portfolio</a>
+        <a href="work_experience.html">Work exp.</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-item">&#8962; Main page</a>
+    <a href="../cv1.html" class="nav-item">&#9741; Portfolio</a>
+    <a href="work_experience.html" class="nav-item">&#9787; Work Experience</a>
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside-head">Projects</div>
+      <div class="aside-nav">
+        <a href="flex.html"><span class="ai-num">1</span> Flex <span class="ai-arr"></span></a>
+        <a href="Calculator.html"><span class="ai-num">2</span> Calculator <span class="ai-arr"></span></a>
+        <a href="../semantic.html"><span class="ai-num">3</span> Semantic <span class="ai-arr"></span></a>
+        <a href="media.html"><span class="ai-num">4</span> Media <span class="ai-arr"></span></a>
+        <a href="regex.html"><span class="ai-num">5</span> Regex <span class="ai-arr"></span></a>
+        <a href="task4.html"><span class="ai-num">6</span> Discussion <span class="ai-arr"></span></a>
+        <a href="henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot<span class="ai-arr"></span></a>
+        <a href="tasklist.html"><span class="ai-num">8</span> Task List <span class="ai-arr"></span></a>
+        <a href="casino.html"><span class="ai-num">9</span> Casino <span class="ai-arr"></span></a>
+        <a href="strings.html"><span class="ai-num">10</span> Strings <span class="ai-arr"></span></a>
+        <a href="tables.html"><span class="ai-num">11</span> Tables <span class="ai-arr"></span></a>
+        <a href="kategoriat.html"><span class="ai-num">12</span> Kategoriat <span class="ai-arr"></span></a>
+      </div>
+      <div class="aside-foot">
+        <div class="tech-pills">
+        </div>
+      </div>
+        
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <div class="form-header">
+        <div class="form-badge">Regex</div>
+        <div class="form-title">Validation <em>Exercises</em></div>
+      </div>
+      <p class="sub-text">Fill in each field and hit Submit — each input is validated against a regular expression pattern.</p>
+
+      <div class="form-wrap">
+
+        <!-- Plate -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="plate">Plate number <span class="pattern-hint">ABC-123</span></label>
+            <div class="input-row">
+              <input id="plate" type="text" pattern="^[a-zA-Z]{3}-\d{3}$" placeholder="e.g. ABC-123" required>
+              <button type="button" class="submit-btn" onclick="validate('plate')">Submit</button>
+            </div>
+            <div class="field-feedback" id="plate-feedback"></div>
+          </div>
+        </div>
+
+        <!-- Date -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="date">Date <span class="pattern-hint">DD.MM.YYYY</span></label>
+            <div class="input-row">
+              <input id="date" type="text" pattern="^\d{1,2}\.\d{1,2}\.\d{4}$" placeholder="e.g. 07.10.2005" required>
+              <button type="button" class="submit-btn" onclick="validate('date')">Submit</button>
+            </div>
+            <div class="field-feedback" id="date-feedback"></div>
+          </div>
+        </div>
+
+        <!-- Identity code -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="identity">Identity code <span class="pattern-hint">DDMMYY±NNNx</span></label>
+            <div class="input-row">
+              <input id="identity" type="text" pattern="^\d{6}[-A]?\d{3}[A-Za-z0-9]$" placeholder="e.g. 071005A123X" required>
+              <button type="button" class="submit-btn" onclick="validate('identity')">Submit</button>
+            </div>
+            <div class="field-feedback" id="identity-feedback"></div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-row">
+          <div class="field-block">
+            <label for="phone">Phone number <span class="pattern-hint">7–10 digits</span></label>
+            <div class="input-row">
+              <input id="phone" type="text" pattern="^\d{7,10}$" placeholder="e.g. 0408195941" required>
+              <button type="button" class="submit-btn" onclick="validate('phone')">Submit</button>
+            </div>
+            <div class="field-feedback" id="phone-feedback"></div>
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="form-row last">
+          <div class="field-block">
+            <label for="html">Simple HTML tag <span class="pattern-hint">&lt;tag&gt;content&lt;/tag&gt;</span></label>
+            <div class="input-row">
+              <input id="html" type="text" pattern="^<.+>.*</.+>$" placeholder="e.g. &lt;p&gt;Hello&lt;/p&gt;" required>
+              <button type="button" class="submit-btn" onclick="validate('html')">Submit</button>
+            </div>
+            <div class="field-feedback" id="html-feedback"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+    <a href="https://tai.fi">&#9632; TAI</a>
+    <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+    <div class="footer-copy">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+  </footer>
+
+</div>
+</body>
+</html>

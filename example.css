@@ -1,0 +1,10 @@
+h1 {
+    font-size: 60px;
+    color: darkorchid;
+    font-style: nastalic;
+}
+
+@font-face {
+    font-family: 'My Special Font';
+    src: url('font.woff');
+}

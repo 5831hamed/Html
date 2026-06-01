@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hamed Gholami — Semantic HTML Task">
+  <meta name="author" content="Hamed Gholami">
+  <title>Hamed Gholami — Semantic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="semantic.css">
+  <script src="semantic.js" defer></script>
+</head>
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <h1>Hamed<br>Gholami</h1>
+        <span>Semantic</span>
+      </div>
+      <div class="hdr-right">
+        <a href="index.html">Home</a>
+        <a href="cv1.html">Portfolio</a>
+        <a href="portfolio/work_experience.html">Work exp.</a>
+        <span class="hdr-pill">Semantic HTML</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-item">&#8962; Main page</a>
+    <a href="cv1.html" class="nav-item">&#9741; Portfolio</a>
+    <a href="portfolio/work_experience.html" class="nav-item">&#9787; Work Experience</a>
+  </nav>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside-head">Projects</div>
+      <div class="aside-nav">
+        <a href="portfolio/flex.html"><span class="ai-num">1</span> Flex <span class="ai-arr"></span></a>
+        <a href="portfolio/Calculator.html"><span class="ai-num">2</span> Calculator <span class="ai-arr"></span></a>
+        <a href="semantic.html"><span class="ai-num">3</span> Semantic <span class="ai-arr"></span></a>
+        <a href="portfolio/media.html"><span class="ai-num">4</span> Media <span class="ai-arr"></span></a>
+        <a href="portfolio/regex.html"><span class="ai-num">5</span> Regex <span class="ai-arr"></span></a>
+        <a href="portfolio/task4.html"><span class="ai-num">6</span> Discussion <span class="ai-arr"></span></a>
+        <a href="portfolio/henkilotiedot.html"><span class="ai-num">7</span>Henkilotiedot<span class="ai-arr"></span></a>
+        <a href="portfolio/tasklist.html"><span class="ai-num">8</span> Task List <span class="ai-arr"></span></a>
+        <a href="portfolio/casino.html"><span class="ai-num">9</span> Casino <span class="ai-arr"></span></a>
+        <a href="portfolio/strings.html"><span class="ai-num">10</span> Strings <span class="ai-arr"></span></a>
+        <a href="portfolio/tables.html"><span class="ai-num">11</span> Tables <span class="ai-arr"></span></a>
+        <a href="portfolio/kategoriat.html"><span class="ai-num">12</span> Kategoriat <span class="ai-arr"></span></a>
+      </div>
+      <div class="aside-foot">
+        <div class="tech-pills">
+        </div>
+      </div>
+      
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- Hero -->
+      <div class="form-header">
+        <div class="form-badge">Task 2025</div>
+        <div class="form-title">Semantic <em>HTML</em></div>
+      </div>
+      <p class="sub-text">What it means · Why it matters · How to use it</p>
+
+      <!-- Cards -->
+      <div class="cards-grid">
+
+        <!-- What is Semantic HTML -->
+        <div class="ccard purple wide" id="what-is-semantic" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-purple">01</div>
+            <div>
+              <div class="cc-name">What is Semantic HTML?</div>
+              <div class="cc-meta">Definition</div>
+            </div>
+          </div>
+          <div class="cc-body">
+            Semantic HTML means using HTML elements that carry meaning about the <strong>structure and content</strong> of a web page — not just its appearance. Instead of using generic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags for everything, semantic elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> clearly describe <em>what that content is</em> and <em>where it belongs</em> on the page.
+          </div>
+        </div>
+
+        <!-- Elements -->
+        <div class="ccard blue" id="elements" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-blue">02</div>
+            <div>
+              <div class="cc-name">Common Semantic Elements</div>
+              <div class="cc-meta">Key tags to know</div>
+            </div>
+          </div>
+          <ul class="card-list">
+            <li><span class="li-dot" style="--c:#a78bfa"></span><div><strong>&lt;header&gt;</strong><br><small>Top section of a page or section</small></div></li>
+            <li><span class="li-dot" style="--c:#004e89"></span><div><strong>&lt;nav&gt;</strong><br><small>Navigation links</small></div></li>
+            <li><span class="li-dot" style="--c:#1a936f"></span><div><strong>&lt;main&gt;</strong><br><small>Primary content of the page</small></div></li>
+            <li><span class="li-dot" style="--c:#ff6b35"></span><div><strong>&lt;article&gt;</strong><br><small>Self-contained, reusable content</small></div></li>
+            <li><span class="li-dot" style="--c:#f7c59f"></span><div><strong>&lt;section&gt;</strong><br><small>Thematic grouping of content</small></div></li>
+            <li><span class="li-dot" style="--c:#0a0a0f"></span><div><strong>&lt;footer&gt;</strong><br><small>Bottom of page or section</small></div></li>
+          </ul>
+        </div>
+
+        <!-- Why use -->
+        <div class="ccard green" id="why-use" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-green">03</div>
+            <div>
+              <div class="cc-name">Why Use Semantic HTML?</div>
+              <div class="cc-meta">3 main reasons</div>
+            </div>
+          </div>
+          <ul class="card-list">
+            <li><span class="li-dot" style="--c:#1a936f"></span><div><strong>Accessibility</strong><br><small>Screen readers understand the page structure better</small></div></li>
+            <li><span class="li-dot" style="--c:#004e89"></span><div><strong>SEO</strong><br><small>Search engines rank pages with clear structure higher</small></div></li>
+            <li><span class="li-dot" style="--c:#ff6b35"></span><div><strong>Maintainability</strong><br><small>Easier to read and edit code for developers</small></div></li>
+          </ul>
+        </div>
+
+        <!-- Example -->
+        <div class="ccard amber wide" id="example" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-amber">04</div>
+            <div>
+              <div class="cc-name">Code Example</div>
+              <div class="cc-meta">Semantic vs non-semantic</div>
+            </div>
+          </div>
+          <div class="code-compare">
+            <div class="code-block bad">
+              <div class="code-label bad-label">❌ Without Semantics</div>
+              <pre><code>&lt;div class="header"&gt;
+  &lt;div class="nav"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;
+  &lt;div class="article"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="footer"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div class="code-block good">
+              <div class="code-label good-label">✅ With Semantics</div>
+              <pre><code>&lt;header&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;...&lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accessibility -->
+        <div class="ccard green" id="accessibility" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-green">05</div>
+            <div>
+              <div class="cc-name">Accessibility</div>
+              <div class="cc-meta">Helping all users</div>
+            </div>
+          </div>
+          <div class="cc-body">
+            Screen readers and assistive technologies rely on semantic HTML to navigate pages. When you use <code>&lt;nav&gt;</code>, users can jump straight to navigation. When you use <code>&lt;main&gt;</code>, they can skip to the core content immediately. Semantic markup makes your site usable by <strong>everyone</strong>.
+          </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="ccard blue" id="seo" data-reveal>
+          <div class="cc-top">
+            <div class="cc-avatar av-blue">06</div>
+            <div>
+              <div class="cc-name">SEO Benefits</div>
+              <div class="cc-meta">Search engine visibility</div>
+            </div>
+          </div>
+          <div class="cc-body">
+            Search engines like Google crawl your HTML to understand what a page is about. Semantic tags tell the crawler: <em>"this is the main content"</em>, <em>"this is a navigation menu"</em>, and <em>"this is a self-contained article."</em> Clear structure leads to <strong>better indexing</strong> and potentially higher rankings.
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://turku.inschool.fi/!02381831/">&#9673; Wilma</a>
+    <a href="https://tai.fi">&#9632; TAI</a>
+    <a href="https://taito.edu.turku.fi/">&#9654; Moodle</a>
+    <div class="footer-copy">Hamed Gholami &copy; 2026 &nbsp;&middot;&nbsp; Tiev25P</div>
+  </footer>
+
+</div>
+</body>
+</html>
