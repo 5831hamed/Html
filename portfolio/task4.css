@@ -136,14 +136,14 @@ nav {
     color: #fff;
 }
 
-/* ── BODY GRID ── */
+
 .body {
     display: grid;
     grid-template-columns: 180px 1fr;
     min-height: 500px;
 }
 
-/* ── ASIDE ── */
+
 aside {
     border-right: 2px solid var(--ink);
 }

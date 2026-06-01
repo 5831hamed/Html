@@ -175,7 +175,28 @@ aside {
   font-weight: 600;
 }
 
+.ai-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px; height: 18px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
 
+.aside-nav a.active .ai-num { background: var(--c1); }
+
+.aside-decor {
+  margin: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  margin-top: auto;
+}
 
 .stripe { height: 8px; }
 .s1 { background: var(--c1); }
